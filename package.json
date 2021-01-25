@@ -1,0 +1,26 @@
+{
+  "name": "acl-secret-math-society",
+  "version": "1.0.0",
+  "description": "Official Website launching soon!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelsong4399/ACL-secret-math-society.git"
+  },
+  "author": "Yihong Song <michaelsong4399@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelsong4399/ACL-secret-math-society/issues"
+  },
+  "homepage": "https://github.com/michaelsong4399/ACL-secret-math-society#readme",
+  "dependencies": {
+    "next": "^10.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
