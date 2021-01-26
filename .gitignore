@@ -133,7 +133,3 @@ dmypy.json
 
 # dependencies
 /node_modules
-
-# Unignore for production
-# !/node_modules/node-fetch/lib
-# !/node_modules/next/dist
