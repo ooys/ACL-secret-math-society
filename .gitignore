@@ -131,6 +131,9 @@ dmypy.json
 # .next
 .next
 
+# dependencies
+/node_modules
+
 # Unignore for production
-!/node_modules/node-fetch/lib
-!/node_modules/next/dist
+# !/node_modules/node-fetch/lib
+# !/node_modules/next/dist
