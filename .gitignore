@@ -130,3 +130,7 @@ dmypy.json
 
 # .next
 .next
+
+# Unignore for production
+!/node_modules/node-fetch/lib
+!/node_modules/next/dist
