@@ -1,9 +1,10 @@
 import Navbar from '../components/navbar'
+import './_app'
 
 const Index = () => (
     <div>
         <Navbar/>
-        <h1>ACL Secret Math Society</h1>
+        <h1 className="block">ACL Secret Math Society</h1>
     </div>
 )
 
