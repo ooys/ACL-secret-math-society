@@ -1,14 +1,19 @@
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
-function Navbar(){
+function Navbar({logo}){
     const router = useRouter()
     return(
         <div>
             <nav class="navbar is-transparent" role="navigation" aris-label="main navigation">
                 {/* Left Navbar Logo + Burger Button for Mobile */}
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="https://bulma.io">
-                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
+                    <a class="navbar-item" onClick={() => router.push('/')}>
+                        <Image
+                            src={logo} 
+                            width="30" 
+                            height="30"
+                        />
                     </a>
 
                     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarmenu">
