@@ -20,7 +20,6 @@
   "homepage": "https://github.com/michaelsong4399/ACL-secret-math-society#readme",
   "dependencies": {
     "bulma": "^0.9.1",
-    "encoding": "^0.1.13",
     "next": "^10.0.5",
     "nprogress": "^0.2.0",
     "react": "^17.0.1",
