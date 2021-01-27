@@ -5,7 +5,18 @@ function Index(){
     return(
         <div>
             <Navbar logo="/logo/logo_simple_gear.png"/>
-            <h1 className="block">ACL Secret Math Society</h1>
+            <div id="wrapper-top">
+                <div className="container is-max-widescreen" id="top">
+                    <div className="columns">
+                        <div className="column">
+                                <img id="logo-index" src="/logo/logo_complete.png"></img>
+                        </div>
+                    </div>
+                    {/* <div id="rotate-top">
+                    
+                    </div> */}
+                </div>
+            </div>
         </div>
     )
 }

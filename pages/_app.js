@@ -1,4 +1,5 @@
 import "../node_modules/bulma/css/bulma.css"
+import "../styles/index.css"
 import Router from 'next/router';
 import NProgress from 'nprogress'; //nprogress module
 import '../node_modules/nprogress/nprogress.css'; //styles of nprogress

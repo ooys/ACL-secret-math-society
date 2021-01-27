@@ -5,18 +5,36 @@ function Navbar({logo}){
     const router = useRouter()
     return(
         <div>
-            <nav class="navbar is-transparent" role="navigation" aris-label="main navigation">
+            <nav 
+                className="navbar is-dark" 
+                role="navigation" 
+                aris-label="main navigation"
+                >
+
                 {/* Left Navbar Logo + Burger Button for Mobile */}
-                <div class="navbar-brand">
-                    <a class="navbar-item" onClick={() => router.push('/')}>
-                        <Image
-                            src={logo} 
-                            width="30" 
-                            height="30"
+                <div className="navbar-brand">
+                    <a className="navbar-item" id="navbarlogo" onClick={() => router.push('/')}>
+                        <img
+                            className="image"
+                            id="logo"
+                            src={logo}
                         />
                     </a>
 
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarmenu">
+                    <a role="button" 
+                        className="navbar-burger" 
+                        aria-label="menu" 
+                        aria-expanded="false" 
+                        data-target="navbaritems" 
+                        id="navbar-toggle"
+                        onClick={() => { 
+                            let toggle = document.querySelector("#navbar-toggle"); 
+                            let menu = document.querySelector("#navbaritems"); 
+                            toggle.classList.toggle("is-active"); 
+                            menu.classList.toggle("is-active"); 
+                        }}
+
+>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -24,35 +42,24 @@ function Navbar({logo}){
                 </div>
 
                 {/* Main Mavbar Menu */}
-                <div id="navbarmenu" class="navbar-menu">
+                <div id="navbaritems" className="navbar-menu">
                     {/* Left of Menu */}
-                    <div class="navbar-start">
-                        <a class="navbar-item is-hoverable" onClick={() => router.push('/')}>
+                    <div className="navbar-start">
+
+                    </div>
+
+                    <div className="navbar-end" style={{alignItems: "center"}}>
+                        <a className="navbar-item is-hoverable" onClick={() => router.push('/')}>
                             Home
                         </a>
 
-                        <a class="navbar-item is-hoverable" onClick={() => router.push('/about')}>
+                        <a className="navbar-item is-hoverable" onClick={() => router.push('/about')}>
                             About Us
                         </a>
 
-                        <div class="navbar-item is-hoverable">
-                            <a class="navbar-item">
-                                More
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="navbar-end">
-                        <div class="navbar-item">
-                            <div class="buttons">
-                                <a class="button is-primary">
-                                    <strong>Sign up</strong>
-                                </a>
-                                <a class="button is-light">
-                                    Log in
-                                </a>
-                            </div>
-                        </div>
+                        <a className="navbar-item">
+                            Events
+                        </a>
                     </div>
                 </div>
             </nav>

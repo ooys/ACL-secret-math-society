@@ -1,0 +1,60 @@
+/* Navbar */
+.navbar {
+    height:64px;
+}
+.navbar-brand {
+    margin-left:50px;
+}
+.navbar-item {
+    height:64px;
+}
+.navbar-item #navbarlogo {
+    width:128px;
+    padding:0px;
+}
+.navbar-item #logo{
+    max-height:fit-content;
+    width: 70px;
+    height: 53px;
+    margin-left: 29px;
+}
+.navbar-end {
+    margin-right: 50px;
+}
+.navbar-end .navbar-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Containers */
+#wrapper-top{
+    height:400px;
+    background-color:#9abdd6;
+    z-index:1;
+}
+.columns{
+    height: 400px;
+    background-color:white;
+    opacity:0.3;
+    z-index:2
+}
+/* #rotate-top{
+    position: relative;
+    background-color:blue;
+    opacity:0.5;
+    top:100px;
+    left:500px;
+    height:200px;
+    width:800px;
+    z-index:1;
+} */
+.columns #logo-index{
+    position: relative;
+    height: 200px;
+    width: auto;
+    top:30px;
+    left:800px;
+    opacity:1.0;
+    z-index:3;
+}
