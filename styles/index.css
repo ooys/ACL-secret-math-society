@@ -1,0 +1,112 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+/* Global */
+/* *{
+    background-color:#363636;
+} */
+
+/* Navbar */
+.navbar {
+    height:64px;
+}
+.navbar-brand {
+    margin-left:50px;
+}
+.navbar-item {
+    height:64px;
+}
+.navbar-item #navbarlogo {
+    width:128px;
+    padding:0px;
+}
+.navbar-item #logo{
+    max-height:fit-content;
+    width: 70px;
+    height: 53px;
+    margin-left: 29px;
+}
+.navbar-end {
+    margin-right: 50px;
+}
+.navbar-end .navbar-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* General Container Configs */
+.wrapper{
+    background-color:#363636;
+}
+.subtitle{
+    font-size:50px;
+    margin: 0 auto;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Container-1 (top) */
+#wrapper-top{
+    height:600px;
+    /* background-color:#9abdd6; */
+    z-index:1;
+}
+#column-1-top{
+    height: 400px;
+    background-color:white;
+    z-index:2
+}
+.columns #logo-index{
+    position: absolute;
+    height: 200px;
+    width: auto;
+    top:30px;
+    right:150px;
+    opacity:1.0;
+    z-index:3;
+}
+#column-1-bot{
+    height: 250px;
+    background-color:#363636;
+    z-index:2
+}
+#column-1-bot-title{
+    font-size:50px;
+    margin: 0 auto;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+
+/* Container-2 */
+#wrapper-2{
+    height:400px;
+    background-color:#9abdd6;
+    z-index:1;
+}
+#column-2{
+    height: 400px;
+    background-color:#9abdd6;
+    z-index:2;
+}
+#column-2-top{
+    height:100px;
+    background-color:#9abdd6;
+    z-index:3;
+    align-items:center;
+}
+#column-2-top-text{
+    color:#ffffff;
+    align-self:center;
+}
+
+
+
+
+
+
+/* Container 3 */
+#column-3-top-text{
+    color:#363636;
+    align-self:center;
+}
