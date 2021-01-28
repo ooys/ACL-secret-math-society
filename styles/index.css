@@ -1,3 +1,11 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+/* Global */
+/* *{
+    background-color:#363636;
+} */
+
 /* Navbar */
 .navbar {
     height:64px;
@@ -27,34 +35,78 @@
 }
 
 
-/* Containers */
+/* General Container Configs */
+.wrapper{
+    background-color:#363636;
+}
+.subtitle{
+    font-size:50px;
+    margin: 0 auto;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Container-1 (top) */
 #wrapper-top{
+    height:600px;
+    /* background-color:#9abdd6; */
+    z-index:1;
+}
+#column-1-top{
+    height: 400px;
+    background-color:white;
+    z-index:2
+}
+.columns #logo-index{
+    position: absolute;
+    height: 200px;
+    width: auto;
+    top:30px;
+    right:150px;
+    opacity:1.0;
+    z-index:3;
+}
+#column-1-bot{
+    height: 250px;
+    background-color:#363636;
+    z-index:2
+}
+#column-1-bot-title{
+    font-size:50px;
+    margin: 0 auto;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+
+/* Container-2 */
+#wrapper-2{
     height:400px;
     background-color:#9abdd6;
     z-index:1;
 }
-.columns{
+#column-2{
     height: 400px;
-    background-color:white;
-    opacity:0.3;
-    z-index:2
+    background-color:#9abdd6;
+    z-index:2;
 }
-/* #rotate-top{
-    position: relative;
-    background-color:blue;
-    opacity:0.5;
-    top:100px;
-    left:500px;
-    height:200px;
-    width:800px;
-    z-index:1;
-} */
-.columns #logo-index{
-    position: relative;
-    height: 200px;
-    width: auto;
-    top:30px;
-    left:800px;
-    opacity:1.0;
+#column-2-top{
+    height:100px;
+    background-color:#9abdd6;
     z-index:3;
+    align-items:center;
+}
+#column-2-top-text{
+    color:#ffffff;
+    align-self:center;
+}
+
+
+
+
+
+
+/* Container 3 */
+#column-3-top-text{
+    color:#363636;
+    align-self:center;
 }
