@@ -47,14 +47,18 @@
 
 /* Container-1 (top) */
 #wrapper-top{
-    height:600px;
-    /* background-color:#9abdd6; */
-    z-index:1;
+    /* TO-DO: FIX MOBILE HEADER IMAGE SUPPORT*/
+    overflow: hidden;
+    padding-top: 50px;
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.2) 20%, rgba(0,0,0,0.9) 100%),linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.8) 80%),url(/header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position-y: 50%;
+    min-height:100%;
+    height: 100%;
 }
 #column-1-top{
     height: 400px;
-    background-color:white;
-    z-index:2
 }
 .columns #logo-index{
     position: absolute;
@@ -63,17 +67,21 @@
     top:30px;
     right:150px;
     opacity:1.0;
-    z-index:3;
+    z-index:4;
 }
 #column-1-bot{
     height: 250px;
-    background-color:#363636;
-    z-index:2
+    background-color:#ffffff;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 80%);
+    z-index:3;
 }
 #column-1-bot-title{
+    height:100px;
+    color:#363636;
     font-size:50px;
-    margin: 0 auto;
+    margin: 30px;
     font-family: 'Oxygen', sans-serif;
+    text-align: center;
 }
 
 

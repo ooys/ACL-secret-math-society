@@ -8,9 +8,7 @@ function Index(){
             <div className = "wrapper" id="wrapper-top">
                 <div className="container is-widescreen" id="container-1-top">
                     <div className="columns is-mobile" id="column-1-top">
-                        <div className="column">
-                                <img id="logo-index" src="/logo/logo_complete.png"></img>
-                        </div>
+                        <img id="logo-index" src="/logo/logo_complete.png"></img>
                     </div>
                     <div className="columns is-mobile" id="column-1-bot">
                         <div className="column">
