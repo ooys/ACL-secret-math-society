@@ -1,5 +1,12 @@
 import Navbar from '../components/navbar'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import './_app'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faDiscord, faSignInAlt)
+
+
 
 function Index(){
     return(
@@ -8,15 +15,36 @@ function Index(){
             <div className = "wrapper" id="wrapper-top">
                 <div className="container is-widescreen" id="container-1-top">
                     <div className="columns is-mobile" id="column-1-top">
-                        <div className="column">
-                                <img id="logo-index" src="/logo/logo_complete.png"></img>
+                        <img id="logo-index" src="/logo/logo_complete.png"></img>
+                        <div className="column is-hidden-mobile half" id="column-1-motto">
+                            <div className="motto-text" id="motto-explore">
+                                Explore.
+                            </div>
+                            <div className="motto-text" id="motto-connect">
+                                Connect.
+                            </div>
+                            <div className="motto-text" id="motto-impact">
+                                Impact.
+                            </div>
+                        </div>
+                        <div id="main-title">
+                            Secret Math Society
                         </div>
                     </div>
                     <div className="columns is-mobile" id="column-1-bot">
-                        <div className="column">
-                            <div className="subtitle" id="column-1-bot-title">
-                                Join Us
-                            </div>
+                        <div className="buttons is-centered" id="column-1-bot-buttons">
+                            <a className="button is-medium is-dark is-rounded has-shadow" target="_blank" rel="noopener noreferrer" href="https://bit.ly/ACLSMSDiscord">
+                                <span className="icon">
+                                    <FontAwesomeIcon icon={fab.faDiscord}></FontAwesomeIcon>
+                                </span>
+                                <span>Join our Server</span>
+                            </a>
+                            <a className="button is-medium is-dark is-rounded has-shadow" target="_blank" rel="noopener noreferrer" href="https://bit.ly/ACLSMSApp">
+                                <span className="icon">
+                                    <FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon>
+                                </span>
+                                <span>Become a Member</span>
+                            </a>
                         </div>
                     </div>
                 </div>

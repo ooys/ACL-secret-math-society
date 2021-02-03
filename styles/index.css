@@ -5,6 +5,43 @@
 /* *{
     background-color:#363636;
 } */
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+      visibility: visible;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-30%);
+      opacity: 0;
+      visibility: visible;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+}
+  
 
 /* Navbar */
 .navbar {
@@ -47,33 +84,101 @@
 
 /* Container-1 (top) */
 #wrapper-top{
-    height:600px;
-    /* background-color:#9abdd6; */
-    z-index:1;
+    /* TO-DO: FIX MOBILE HEADER IMAGE SUPPORT*/
+    overflow: hidden;
+    padding-top: 50px;
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.2) 20%, rgba(0,0,0,0.9) 100%),linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.8) 80%),url(/header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position-y: 50%;
+    min-height:100%;
+    height: 100%;
 }
 #column-1-top{
     height: 400px;
-    background-color:white;
-    z-index:2
 }
 .columns #logo-index{
+    visibility: hidden;
     position: absolute;
     height: 200px;
     width: auto;
     top:30px;
     right:150px;
     opacity:1.0;
-    z-index:3;
+    z-index:4;
+    animation: 1.3s ease-out 2s 1 slideInFromRight forwards;
 }
-#column-1-bot{
-    height: 250px;
-    background-color:#363636;
-    z-index:2
+
+/* Motto */
+
+.motto-text{
+    color:white;
+    visibility:hidden;
+    font-size:80px;
+    margin-left: 80px;
+    animation: 1s ease-out 3s 1 slideInFromLeft forwards;
 }
-#column-1-bot-title{
-    font-size:50px;
-    margin: 0 auto;
+#motto-explore:hover{
+    color:#1ba4ff;
+    transition: color 0.5s;
+}
+#motto-connect{
+    padding-left:5%; /*50px */
+}
+#motto-connect:hover{
+    color:#eb6a6a;
+    transition: color 0.5s;
+}
+#motto-impact{
+    padding-left:15%; /*160px*/
+}
+#motto-impact:hover{
+    color:#e7eca0;
+    transition: color 0.5s;
+}
+
+
+#main-title{
+    visibility:hidden;
+    color:white;
     font-family: 'Oxygen', sans-serif;
+    font-size:50px;
+    position: absolute;
+    top:280px;
+    right:20px;
+    animation: 1.3s ease-out 2.5s 1 fadeIn forwards;
+}
+
+#column-1-bot{
+    height: 200px;
+    background-color:#ffffff;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 80%);
+    z-index:3;
+    margin-right:-20%;
+    margin-left: -20%;
+    align-content:center;
+}
+#column-1-bot-buttons{
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    align-items: center;
+}
+#column-1-bot-buttons .button{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.button{
+    visibility: hidden;
+    animation: 1s ease-out 3s 1 fadeIn forwards;
+    transition: transform 0.3s;
+    transition-timing-function: ease;
+}
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.5s box-shadow 0.5s;
+    transition-timing-function: ease;
 }
 
 
