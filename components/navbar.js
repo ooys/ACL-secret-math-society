@@ -10,7 +10,6 @@ function Navbar({logo}){
                 role="navigation" 
                 aris-label="main navigation"
                 >
-
                 {/* Left Navbar Logo + Burger Button for Mobile */}
                 <div className="navbar-brand">
                     <a className="navbar-item" id="navbarlogo" onClick={() => router.push('/')}>
