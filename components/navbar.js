@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import Image from 'next/image'
 
 function Navbar({logo}){
     const router = useRouter()
@@ -32,8 +31,7 @@ function Navbar({logo}){
                             toggle.classList.toggle("is-active"); 
                             menu.classList.toggle("is-active"); 
                         }}
-
->
+                    >
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
