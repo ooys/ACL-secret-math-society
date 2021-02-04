@@ -54,19 +54,16 @@ function Index(){
             <div className = "wrapper" id="wrapper-2">
                 <div className="container is-widescreen">
                     <div className="columns is-mobile" id="column-2-top">
-                        <h1 className="subtitle" id="column-2-top-text">
+                        <h1 className="section-title is-centered" id="column-2-top-text">
                             Our Mission
                         </h1>
                     </div>
                     <div className="columns is-centered" id="column-2">
-                        <div className="column" >
+                        <div className="column is-two-fifths" >
                             1
                         </div>
                         <div className="column" >
                             2
-                        </div>
-                        <div className="column" >
-                            3
                         </div>
                     </div>
                 </div>
