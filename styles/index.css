@@ -71,17 +71,6 @@
     padding-right: 20px;
 }
 
-
-/* General Container Configs */
-.wrapper{
-    background-color:#363636;
-}
-.section-title{
-    font-size:50px;
-    margin: 0 auto;
-    font-family: 'Oxygen', sans-serif;
-}
-
 /* Container-1 (top) */
 #wrapper-top{
     /* TO-DO: FIX MOBILE HEADER IMAGE SUPPORT*/
@@ -148,6 +137,17 @@
     right:20px;
     animation: 1.3s ease-out 2.5s 1 fadeIn forwards;
 }
+#main-subtitle{
+    visibility:hidden;
+    color:white;
+    font-family: 'Oxygen', sans-serif;
+    font-size:20px;
+    position: absolute;
+    top:350px;
+    right:10px;
+    animation: 1.3s ease-out 2.5s 1 fadeIn forwards;
+}
+
 
 #column-1-bot{
     height: 200px;
@@ -182,44 +182,82 @@
     transition-timing-function: ease;
 }
 
+/* Body Wrappers */ /* General Container Configs */
+.wrapper{
+    background-color:#363636;
+}
+.section-title{
+    font-size:50px;
+    margin: 0 auto;
+    font-family: 'Oxygen', sans-serif;
+}
 
-
+/* Color: a2ceee */
 /* Container-2 */
 #wrapper-2{
-    height:400px;
-    background-color:#9abdd6;
+    height:200px;
+    background-color:#a2ceee;
+    /* background: linear-gradient(180deg, rgba(162, 206, 238,1) 80%, rgba(162, 206, 238,0.8) 100%); */
     z-index:2;
 }
 #column-2{
-    height: 300px;
-    background-color:#9abdd6;
+    height: 200px;
     z-index:3;
 }
 #column-2-top{
-    height:100px;
-    background-color:#9abdd6;
+    margin-top:0px;
+    height:200px;
     z-index:4;
-    align-items:center;
 }
 #column-2-top-text{
-    color:#ffffff;
+    color:#363636;
+    align-self:center;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/* Color: a2ceee */
+/* Container-3 */
+#wrapper-3{
+    height:400px;
+    background-color:#ffffff;
+    z-index:2;
+}
+#column-3{
+    height: 200px;
+    z-index:3;
+}
+#column-3-top{
+    margin-top:0px;
+    height:100px;
+    z-index:4;
+}
+#column-3-top-text{
+    color:#363636;
     align-self:center;
 }
 
 
 
 
-
-
-/* Container 3 */
-#column-3-top{
+/* Container 4 */
+#wrapper-4{
+    height:400px;
+    background-color:#a2ceee;
+    z-index:2;
+}
+#column-4-top{
     margin-top: 0px;
     height:100px;
-    background-color:#ffffff;
+    background-color:#a2ceee;
     z-index:4;
     align-items:center;
 }
-#column-3-top-text{
+#column-4-top-text{
     color:#363636;
     align-self:center;
 }
