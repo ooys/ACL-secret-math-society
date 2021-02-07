@@ -33,6 +33,9 @@ function Index(){
                         <div id="main-title">
                             Secret Math Society
                         </div>
+                        <div id="main-subtitle">
+                            An Academies of Loudoun Student-run Organization
+                        </div>
                     </div>
                     <div className="columns is-mobile" id="column-1-bot">
                         <div className="buttons is-centered" id="column-1-bot-buttons">
@@ -53,33 +56,64 @@ function Index(){
                 </div>
             </div>
 
-            {/* Container 2 - Our Mission */}
+            {/* Container 2 - Quote */}
             <div className = "wrapper" id="wrapper-2">
                 <div className="container is-widescreen">
                     <div className="columns is-mobile" id="column-2-top">
-                        <h1 className="section-title is-centered" id="column-2-top-text">
+                        <h1 className="column is-centered" id="column-2-top-text">
+                            "Sharing our passion in mathematics, one equation at a time."
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+
+            {/* Container 3 - Our Mission */}
+            <div className = "wrapper" id="wrapper-3">
+                <div className="container is-widescreen">
+                    <div className="columns is-mobile" id="column-3-top">
+                        <h1 className="section-title is-centered" id="column-3-top-text">
                             Our Mission
                         </h1>
                     </div>
-                    <div className="columns is-centered" id="column-2">
-                        <div className="column is-two-fifths" >
-                            1
+                    <div className="columns is-centered" id="column-3">
+                        <div className="column" id="column-3-explore">
+                            <div className="title">
+                                Explore
+                            </div>
                         </div>
-                        <div className="column" >
-                            2
+                        <div className="column" id="column-3-connect">
+                            <div className="title">
+                                Connect
+                            </div>
+                        </div>
+                        <div className="column" id="column-3-impact">
+                            <div className="title">
+                                Impact
+                            </div>
+                            <ul>
+                                <li>
+                                    1
+                                </li>
+                                <li>
+                                    1
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="wrapper-3">
+
+            {/* Container 4 - Meetings */}
+            <div id="wrapper-4">
                 <div className="container is-widescreen">
-                    <div className="columns is-mobile" id="column-3-top">
-                        <h1 className="subtitle" id="column-3-top-text">
+                    <div className="columns is-mobile" id="column-4-top">
+                        <h1 className="section-title is-centered" id="column-4-top-text">
                             Meetings
                         </h1>
                     </div>
-                    <div className="columns" id="column-3">
+                    <div className="columns" id="column-4">
                         <div className="column" >
                             How to join?
                         </div>
@@ -87,9 +121,9 @@ function Index(){
                 </div>
             </div>
 
-            <div id="wrapper-4">
+            <div className = "wrapper" id="wrapper-5">
                 <div className="container is-widescreen">
-                    <div className="columns" id="column-4">
+                    <div className="columns" id="column-5">
                         <div className="column" >
                             Suggestions?
                             Contact Us.
