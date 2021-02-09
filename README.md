@@ -1,3 +1,5 @@
 # ACL-secret-math-society
 
-Official Website launching soon!
+Official website has just been launched~!
+
+https://aclsms.vercel.app/
