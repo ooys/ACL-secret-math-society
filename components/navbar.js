@@ -50,7 +50,7 @@ function Navbar({logo}){
                             Home
                         </a>
 
-                        <a className="navbar-item is-hoverable" onClick={() => router.push('/about')}>
+                        <a className="navbar-item is-hoverable" /* onClick={() => router.push('/about')}*/>
                             About Us
                         </a>
 
