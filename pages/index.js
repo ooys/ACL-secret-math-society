@@ -1,10 +1,10 @@
 import Navbar from '../components/navbar'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { fab, faDiscord, faGoogle } from '@fortawesome/free-brands-svg-icons'
 import './_app'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
-library.add(fab, faDiscord, faSignInAlt)
+library.add(fab, faDiscord, faSignInAlt, faGoogle)
 
 
 
@@ -76,29 +76,66 @@ function Index(){
                             Our Mission
                         </h1>
                     </div>
-                    <div className="columns is-centered" id="column-3">
+                    <div className="columns is-centered is-mobile" id="column-3">
                         <div className="column" id="column-3-explore">
-                            <div className="title">
-                                Explore
+                            <div className="box has-shadow" id="column-3-box-explore">
+                                <div className="title">
+                                    Explore
+                                </div>
+                                <div className="content" id="column-3-impact-content">
+                                    <ul >
+                                        <li>
+                                            Competition Math
+                                        </li>
+                                        <li>
+                                            Hands-on Experiments
+                                        </li>
+                                        <li>
+                                            Team Challenges
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div className="column" id="column-3-connect">
-                            <div className="title">
-                                Connect
+                        <div className="column" id="column-2-connect">
+                            <div className="box has-shadow" id="column-3-box-connect">
+                                <div className="title">
+                                    Connect
+                                </div>
+                                <div className="content" id="column-3-impact-content">
+                                    <ul >
+                                        <li>
+                                            Engagement
+                                        </li>
+                                        <li>
+                                            Diversity
+                                        </li>
+                                        <li>
+                                            Volunteering Opportunities
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div className="column" id="column-3-impact">
-                            <div className="title">
-                                Impact
+                            <div className="box has-shadow" id="column-3-box-impact">
+                                <div className="title">
+                                    Impact
+                                </div>
+                                <div className="content" id="column-3-impact-content">
+                                    <ul >
+                                        <li>
+                                            2021 ACL Pi Day Celebration
+                                        </li>
+                                        <li>
+                                            ACL Reset Club Collaboration
+                                        </li>
+                                        <li>
+                                            ... and more!
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <ul>
-                                <li>
-                                    1
-                                </li>
-                                <li>
-                                    1
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -114,8 +151,28 @@ function Index(){
                         </h1>
                     </div>
                     <div className="columns" id="column-4">
-                        <div className="column" >
-                            How to join?
+                        <div className="column is-half" id="column-4-left">
+                            <div id="column-4-left-text">
+                                Google Meet<br></br> Every other Tuesday, 4-5PM EST
+                            </div>
+                            <a className="button is-medium is-success is-rounded has-shadow" target="_blank" rel="noopener noreferrer" href="https://g.co/meet/aclsecretmathsociety">
+                                <span className="icon">
+                                    <FontAwesomeIcon icon={fab.faGoogle}></FontAwesomeIcon>
+                                </span>
+                                <span>Join Google Meet</span>
+                            </a>
+                        </div>
+                        <div className="column" id="column-4-right">
+                            <div id="column-4-right-text">
+                                Upcoming Meeting Dates
+                            </div>
+                            <div id="column-4-right-bot-text">
+                                February 23, 2021 (Tuesday)
+                                <br></br>
+                                March 9, 2021 (Tuesday)
+                                <br></br>
+                                March 23, 2021 (Tuesday)
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -124,9 +181,9 @@ function Index(){
             <div className = "wrapper" id="wrapper-5">
                 <div className="container is-widescreen">
                     <div className="columns" id="column-5">
-                        <div className="column" >
-                            Suggestions?
-                            Contact Us.
+                        <div className="column">
+                            {/* Suggestions?
+                            Contact Us. */}
                         </div>
                     </div>
                 </div>
