@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 library.add(fab, faDiscord, faSignInAlt, faGoogle)
 
-
+/* To do: Add Lazyload */
 
 function Index(){
     return(
@@ -207,16 +207,15 @@ function Index(){
                 </div>
             </div>
 
-            <div className = "wrapper" id="wrapper-5">
+            {/* <div className = "wrapper" id="wrapper-5">
                 <div className="container is-widescreen">
                     <div className="columns" id="column-5">
                         <div className="column">
-                            {/* Suggestions?
-                            Contact Us. */}
+                            Suggestions? Contact Us
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Bottom Contact Bar */}
             <Footer />
