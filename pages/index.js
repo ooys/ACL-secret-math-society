@@ -5,8 +5,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faDiscord, faGoogle } from '@fortawesome/free-brands-svg-icons'
 import './_app'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
-library.add(fab, faDiscord, faSignInAlt, faGoogle)
+import { faSignInAlt, faMicroscope, faHandsHelping, faUsers } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faDiscord, faSignInAlt, faGoogle, faMicroscope, faHandsHelping, faUsers)
 
 /* To do: Add Lazyload */
 
@@ -16,7 +16,7 @@ function Index(){
             <title>
                 Secret Math Society - Home
             </title>
-            <Navbar logo="/logo/logo_simple_gear.png"/>
+            <Navbar logo="/logo/logo_simple_gear.png" title="Secret Math Society"/>
             <div className = "wrapper" id="wrapper-top">
                 <div className="container is-widescreen" id="container-1-top">
                     <div className="columns is-mobile" id="column-1-top">
@@ -109,6 +109,7 @@ function Index(){
                         <div className="column" id="column-3-explore">
                             <div className="box has-shadow" id="column-3-box-explore">
                                 <div className="title">
+                                    <FontAwesomeIcon className="column-3-box-icon fa-sm" icon={faMicroscope}></FontAwesomeIcon>
                                     Explore
                                 </div>
                                 <div className="content" id="column-3-impact-content">
@@ -129,6 +130,7 @@ function Index(){
                         <div className="column" id="column-2-connect">
                             <div className="box has-shadow" id="column-3-box-connect">
                                 <div className="title">
+                                    <FontAwesomeIcon className="column-3-box-icon fa-sm" icon={faUsers}></FontAwesomeIcon>
                                     Connect
                                 </div>
                                 <div className="content" id="column-3-impact-content">
@@ -149,6 +151,7 @@ function Index(){
                         <div className="column" id="column-3-impact">
                             <div className="box has-shadow" id="column-3-box-impact">
                                 <div className="title">
+                                    <FontAwesomeIcon className="column-3-box-icon fa-sm" icon={faHandsHelping}></FontAwesomeIcon>
                                     Impact
                                 </div>
                                 <div className="content" id="column-3-impact-content">
@@ -157,7 +160,7 @@ function Index(){
                                             2021 ACL Pi Day Celebration
                                         </li>
                                         <li>
-                                            ACL Reset Club Collaboration
+                                            ACL RESET Club Collaboration
                                         </li>
                                         <li>
                                             ... and more!

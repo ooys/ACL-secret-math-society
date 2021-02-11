@@ -2,15 +2,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll"
+import { useRouter } from 'next/router'
 
 function Footer(){
+    const router = useRouter()
     return(
         <div>
             <footer className="footer">
                 <div className="container is-widescreen" id="container-footer">
                     <div className="columns" id="column-footer">
-                        <div className="column" id="column-footer-left">
+                        <div className="column is-one-third" id="column-footer-left">
                             <Link
                                 activeClass="active"
                                 to="navbar"
@@ -48,13 +50,41 @@ function Footer(){
                         </div>
 
 
-                        <div className="column">
-                            {/* Test2 */}
+                        <div className="column is-one-quarter is-hidden-mobile" id="column-footer-middle">
+                            <div className="footer-title">
+                                Navigation
+                            </div>
+                            <div className="footer-element">
+                                <a onClick={() => router.push('/')}>
+                                    Home
+                                </a>
+                            </div>
+                            <div className="footer-element"> 
+                                <a onClick={() => router.push('/about')}>
+                                    About Us
+                                </a>
+                            </div>
+                            <div className="footer-element">
+                                <a>
+                                    Events
+                                </a>
+                            </div>      
                         </div>
 
 
-                        <div className="column">
-                            {/* Test3 */}
+                        <div className="column is-hidden-mobile" id="column-footer-right">
+                            <p id="column-footer-right-text">
+                                <b>Secret Math Society</b> is an Academies of Loudoun club
+                                 operated in its entirety by students and 
+                                 sponsored by Academies of Loudoun faculty.
+                            </p>
+                            <a id="column-footer-right-anchor" target="_blank" rel="noopener noreferrer" href="https://www.lcps.org/acl">
+                                <img
+                                    className="image"
+                                    id="column-footer-right-logo"
+                                    src="/logo/acl_notext.png"
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
