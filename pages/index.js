@@ -1,4 +1,6 @@
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
+import { Link, animateScroll as scroll } from "react-scroll";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faDiscord, faGoogle } from '@fortawesome/free-brands-svg-icons'
 import './_app'
@@ -6,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 library.add(fab, faDiscord, faSignInAlt, faGoogle)
 
-
+/* To do: Add Lazyload */
 
 function Index(){
     return(
@@ -20,15 +22,42 @@ function Index(){
                     <div className="columns is-mobile" id="column-1-top">
                         <img id="logo-index" src="/logo/logo_complete.png"></img>
                         <div className="column is-hidden-mobile half" id="column-1-motto">
-                            <div className="motto-text" id="motto-explore">
-                                Explore.
-                            </div>
-                            <div className="motto-text" id="motto-connect">
-                                Connect.
-                            </div>
-                            <div className="motto-text" id="motto-impact">
-                                Impact.
-                            </div>
+                            <Link
+                                activeClass="active"
+                                to="column-3-box-explore"
+                                spy={true}
+                                smooth={true}
+                                offset={-130}
+                                duration={1000}
+                                >
+                                <div className="motto-text" id="motto-explore">
+                                        Explore.
+                                </div>
+                            </Link>
+                            <Link
+                                activeClass="active"
+                                to="column-3-box-connect"
+                                spy={true}
+                                smooth={true}
+                                offset={-130}
+                                duration={1000}
+                                >
+                                <div className="motto-text" id="motto-connect">
+                                    Connect.
+                                </div>
+                            </Link>
+                            <Link
+                                activeClass="active"
+                                to="column-3-box-impact"
+                                spy={true}
+                                smooth={true}
+                                offset={-130}
+                                duration={1000}
+                                >
+                                <div className="motto-text" id="motto-impact">
+                                    Impact.
+                                </div>
+                            </Link>
                         </div>
                         <div id="main-title">
                             Secret Math Society
@@ -162,7 +191,7 @@ function Index(){
                                 <span>Join Google Meet</span>
                             </a>
                         </div>
-                        <div className="column" id="column-4-right">
+                        <div className="column is-hidden-mobile" id="column-4-right">
                             <div id="column-4-right-text">
                                 Upcoming Meeting Dates
                             </div>
@@ -178,19 +207,18 @@ function Index(){
                 </div>
             </div>
 
-            <div className = "wrapper" id="wrapper-5">
+            {/* <div className = "wrapper" id="wrapper-5">
                 <div className="container is-widescreen">
                     <div className="columns" id="column-5">
                         <div className="column">
-                            {/* Suggestions?
-                            Contact Us. */}
+                            Suggestions? Contact Us
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Bottom Contact Bar */}
-
+            <Footer />
         </div>
     )
 }
