@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 
-function Navbar({logo}){
+function Navbar({logo, title}){
     const router = useRouter()
     return(
         <div>
@@ -18,6 +18,9 @@ function Navbar({logo}){
                             src={logo}
                         />
                     </a>
+                    <div id="navbar-description">
+                        {title}
+                    </div>
 
                     <a role="button" 
                         className="navbar-burger" 
