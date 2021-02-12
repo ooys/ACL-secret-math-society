@@ -57,8 +57,8 @@ function Navbar({logo, title}){
                             About Us
                         </a>
 
-                        <a className="navbar-item">
-                            Events
+                        <a className="navbar-item is-hoverable" onClick={() => router.push('/piathon')}>
+                            Pi-a-thon 2021
                         </a>
                     </div>
                 </div>
