@@ -16,7 +16,7 @@ function Index(){
             <title>
                 Secret Math Society - Home
             </title>
-            <Navbar logo="/logo/logo_simple_gear.png" title="Secret Math Society"/>
+            <Navbar logo="/logo/logo_simple_gear.png" title="Secret Math Society" className="navbar is-dark" />
             <div className = "wrapper" id="wrapper-top">
                 <div className="container is-widescreen" id="container-1-top">
                     <div className="columns is-mobile" id="column-1-top">

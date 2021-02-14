@@ -1,6 +1,5 @@
 /* Font Family */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-
 /* Global */
 /* *{
     background-color:#363636;
@@ -133,6 +132,7 @@
     width:100px;
 }
 
+/* HOME */
 
 /* Container-1 (top) */
 #wrapper-top{
@@ -379,4 +379,93 @@
     margin-top:30px;
     font-size:20px;
     font-family: 'Oxygen', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PIATHON */
+#piathon-navbar{
+    background-color:transparent;
+    color: black;
+}
+#piathon-navbar .navbar-end .navbar-item{
+    color: black;
+
+}
+
+#piathon-wrapper-top{
+    /* TO-DO: FIX MOBILE HEADER IMAGE SUPPORT*/
+    overflow: hidden;
+    padding-top: 50px;
+    background-image:url(/piathon/header.jpg);
+    background-color:#ef8285;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+    background-position-x: 50%;
+    background-position-y: 80%;
+    /* opacity:0.9; */
+}
+#piathon-column-1-top{
+    height:500px;
+}
+
+#piathon-wrapper-2{
+    height:auto;
+    background-color:#ef8285;
+}
+#piathon-column-2-top{
+    margin-top:0px;
+    margin-left:5%;
+    height:60px;
+    color:black;
+    font-size:60px;
+}
+#piathon-column-2-subtop{
+    margin-top:0px;
+    margin-left:5%;
+    height:50px;
+    color:#363636;
+    font-size:30px;
+}
+#piathon-wrapper-2-hr{
+    background-color:black;
+}
+
+#piathon-card-info{
+    margin-left:5%;
+    margin-right:5%;
+    background: #f19ea1;
+}
+#piathon-card-rules{
+    margin-left:5%;
+    margin-right:5%;
+    background: #f19ea1;
+}
+#piathon-card-rules-title{
+    font-size:25px;
+}
+#piathon-button-register{
+    visibility: visible;
+    animation:none;
+    background-color:white;
+}
+
+#piathon-button-discord{
+    visibility: visible;
+    animation:none;
+}
+.piathon-icon-anchor{
+    color:#363636;
+}
+.piathon-icon-anchor:hover{
+    color:black;
 }
