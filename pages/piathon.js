@@ -4,6 +4,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt, faEnvelope , faArrowAltCircleRight} from '@fortawesome/free-solid-svg-icons'
+import dynamic from 'next/dynamic'
+
+const DynamicClock = dynamic(() => import('../components/clock.js'))
 
 function About(){
     return(
@@ -26,10 +29,13 @@ function About(){
                     <div className="columns is-mobile" id="piathon-column-2-top">
                         Pi-a-thon 2021
                     </div>
-                    <div className="columns is-mobile" id="piathon-column-2-subtop">
+                    <div id="piathon-column-2-subtop">
                         An Academies of Loudoun competition celebrating 2021 Pi Day.
                     </div>
-                    <hr id="piathon-wrapper-2-hr"></hr>
+                    <hr className="piathon-wrapper-2-hr"></hr>
+                    <DynamicClock />
+
+
                     <div className="card" id="piathon-card-info">
                         <header className="card-header">
 		                    <p class="card-header-title" id="piathon-card-rules-title">
@@ -106,9 +112,9 @@ function About(){
                                 <br></br>
                                 Tasks will remain open for the duration of the event. 
                                 <br></br>
-                                No new task will be posted for Day 5.
+                                No new task will be posted for Day 5, the final day to submit all tasks.
                                 <br></br>
-                                Submissions will close after Day 5. (11:59 PM EST 3/13)
+                                Submissions will close at 11:59 PM EST on Day 5. (3/13)
                                 <br></br>
                                 <br></br>
                                 <table class="table is-hoverable is-striped is-bordered">
@@ -207,7 +213,9 @@ function About(){
                             <p className="subtitle is-5">
                                 Every valid submission is given 2 Points.
                                 <br></br>
-                                Each correct answer is given 8 extra Points.
+                                Each correct answer is given 8 <b>extra</b> Points.
+                                <br></br>
+                                Only the first valid submission will count towards your team's final score.
                             </p>
                             <br></br>
                             <p className="title is-4">
@@ -233,15 +241,25 @@ function About(){
                         </header>
                         <div className="card-content">
                             <p className="title is-4">
-                                Discord Server
+                                Email Us
                             </p>
-                            <a className="button is-medium is-dark is-rounded has-shadow" id="piathon-button-discord" target="_blank" rel="noopener noreferrer" href="https://bit.ly/ACLSMSDiscord">
+                            <p className="subtitle is-5">
+                            Yihong Song - Pi Day Committee
+                            <br></br>
+                            <a className="piathon-icon-anchor" target="_blank" rel="noopener noreferrer" href="mailto:vpevents@aclptsa.org">
                                 <span className="icon">
-                                    <FontAwesomeIcon icon={fab.faDiscord}></FontAwesomeIcon>
+                                    <FontAwesomeIcon icon={faEnvelope} ></FontAwesomeIcon>
                                 </span>
-                                <span>Join our Server</span>
                             </a>
                             <br></br>
+                            Tarun Ravi - VP Events, ACL PTSA
+                            <br></br>
+                            <a className="piathon-icon-anchor" target="_blank" rel="noopener noreferrer" href="mailto:vpevents@aclptsa.org">
+                                <span className="icon">
+                                    <FontAwesomeIcon icon={faEnvelope} ></FontAwesomeIcon>
+                                </span>
+                            </a>
+                            </p>
                             <br></br>
                             <p className="title is-4">
                                 Email our Sponsors
@@ -263,13 +281,6 @@ function About(){
                                     </span>
                                 </a>
                                 <br></br>
-                                Ms. Judy Pan - Secret Math Society
-                                <br></br>
-                                <a className="piathon-icon-anchor" target="_blank" rel="noopener noreferrer" href="mailto:judy.pan@lcps.org">
-                                    <span className="icon">
-                                        <FontAwesomeIcon icon={faEnvelope} ></FontAwesomeIcon>
-                                    </span>
-                                </a>
                             </p>
                         </div>
                     </div>

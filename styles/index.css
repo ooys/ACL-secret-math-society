@@ -418,7 +418,6 @@
 #piathon-column-1-top{
     height:500px;
 }
-
 #piathon-wrapper-2{
     height:auto;
     background-color:#ef8285;
@@ -433,13 +432,34 @@
 #piathon-column-2-subtop{
     margin-top:0px;
     margin-left:5%;
-    height:50px;
+    height:auto;
     color:#363636;
     font-size:30px;
 }
-#piathon-wrapper-2-hr{
+.piathon-wrapper-2-hr{
     background-color:black;
 }
+
+#piathon-clock{
+    color: #363636;
+    font-size:80px;
+    text-align: center;
+    /* text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0); */
+}
+.piathon-clock-top{
+    margin-left:5%;
+    height:auto;
+    color:black;
+    font-size:30px;
+}
+.piathon-clock-subtop{
+    margin-left:5%;
+    height:auto;
+    color:#363636;
+    font-size:20px;
+}
+
+
 
 #piathon-card-info{
     margin-left:5%;
