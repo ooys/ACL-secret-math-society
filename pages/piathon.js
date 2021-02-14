@@ -35,7 +35,6 @@ function About(){
                     <hr className="piathon-wrapper-2-hr"></hr>
                     <DynamicClock />
 
-
                     <div className="card" id="piathon-card-info">
                         <header className="card-header">
 		                    <p class="card-header-title" id="piathon-card-rules-title">
@@ -244,16 +243,15 @@ function About(){
                                 Email Us
                             </p>
                             <p className="subtitle is-5">
-                            Yihong Song - Pi Day Committee
+                                Yihong Song - Pi Day Committee &nbsp;
+                                <a className="piathon-icon-anchor" target="_blank" rel="noopener noreferrer" href="mailto:1036566@lcps.org">
+                                    <span className="icon">
+                                        <FontAwesomeIcon icon={faEnvelope} ></FontAwesomeIcon>
+                                    </span>
+                                </a>
                             <br></br>
-                            <a className="piathon-icon-anchor" target="_blank" rel="noopener noreferrer" href="mailto:vpevents@aclptsa.org">
-                                <span className="icon">
-                                    <FontAwesomeIcon icon={faEnvelope} ></FontAwesomeIcon>
-                                </span>
-                            </a>
                             <br></br>
-                            Tarun Ravi - VP Events, ACL PTSA
-                            <br></br>
+                            Tarun Ravi - VP Events, ACL PTSA &nbsp;
                             <a className="piathon-icon-anchor" target="_blank" rel="noopener noreferrer" href="mailto:vpevents@aclptsa.org">
                                 <span className="icon">
                                     <FontAwesomeIcon icon={faEnvelope} ></FontAwesomeIcon>
@@ -265,16 +263,15 @@ function About(){
                                 Email our Sponsors
                             </p>
                             <p className="subtitle is-5">
-                                Dr. Linda Gantz - Pi Day Committee
-                                <br></br>
+                                Dr. Linda Gantz - Pi Day Committee&nbsp;
                                 <a className="piathon-icon-anchor" target="_blank" rel="noopener noreferrer" href="mailto:linda.gantz@lcps.org">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faEnvelope} ></FontAwesomeIcon>
                                     </span>
                                 </a>
                                 <br></br>
-                                Mrs. Gina Craun - Pi Day Committee
                                 <br></br>
+                                Mrs. Gina Craun - Pi Day Committee&nbsp;
                                 <a className="piathon-icon-anchor" target="_blank" rel="noopener noreferrer" href="mailto:gina.craun@lcps.org">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faEnvelope} ></FontAwesomeIcon>
