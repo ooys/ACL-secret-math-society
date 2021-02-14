@@ -425,7 +425,8 @@
 #piathon-column-2-top{
     margin-top:0px;
     margin-left:5%;
-    height:60px;
+    height:auto;
+    margin-bottom:-20px;
     color:black;
     font-size:60px;
 }
@@ -486,6 +487,8 @@
 }
 .piathon-icon-anchor{
     color:#363636;
+    margin-top:0px;
+    position:absolute;
 }
 .piathon-icon-anchor:hover{
     color:black;
