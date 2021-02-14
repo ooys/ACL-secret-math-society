@@ -173,7 +173,7 @@ function About(){
                                             Day 5, Saturday 3/13
                                             </td>
                                             <td>
-                                            No new tasks,
+                                            No new tasks
                                             </td>
                                             <td>
                                             Last day to submit!

@@ -395,6 +395,7 @@
 /* PIATHON */
 #piathon-navbar{
     background-color:transparent;
+    backdrop-filter: blur(3px);
     color: black;
 }
 #piathon-navbar .navbar-end .navbar-item{
