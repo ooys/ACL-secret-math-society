@@ -1,13 +1,14 @@
 import { useRouter } from 'next/router'
 
-function Navbar({logo, title}){
+function Navbar({logo, title, className, id}){
     const router = useRouter()
     return(
         <div>
             <nav 
-                className="navbar is-dark" 
+                className={className}
                 role="navigation" 
                 aris-label="main navigation"
+                id = {id}
                 >
                 {/* Left Navbar Logo + Burger Button for Mobile */}
                 <div className="navbar-brand">
