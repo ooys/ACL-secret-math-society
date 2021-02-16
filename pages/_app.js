@@ -15,9 +15,9 @@ Router.events.on('routeChangeError', () => NProgress.done())
 function MyApp({ Component, pageProps }) {
     useEffect(() =>{
       ReactGA.initialize('UA-189833022-1');
-    })
 
-    ReactGA.pageview('/');
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    },[])
 
     return <Component {...pageProps} />
   }
