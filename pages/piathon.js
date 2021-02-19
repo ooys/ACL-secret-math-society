@@ -1,12 +1,15 @@
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+import Clock from '../components/clock'
+import Leaderboard from '../components/leaderboard'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt, faEnvelope , faArrowAltCircleRight} from '@fortawesome/free-solid-svg-icons'
 import dynamic from 'next/dynamic'
 
-const DynamicClock = dynamic(() => import('../components/clock.js'))
+// const DynamicClock = dynamic(() => import('../components/clock.js'))
+// const DynamicLeaderboard = dynamic(() => import('../components/leaderboard.js'))
 
 function About(){
     return(
@@ -33,11 +36,12 @@ function About(){
                         An Academies of Loudoun competition celebrating 2021 Pi Day.
                     </div>
                     <hr className="piathon-wrapper-2-hr"></hr>
-                    <DynamicClock />
+                    <Clock />
+                    <Leaderboard />
 
                     <div className="card" id="piathon-card-info">
                         <header className="card-header">
-		                    <p class="card-header-title" id="piathon-card-rules-title">
+		                    <p className="card-header-title" id="piathon-card-rules-title">
                                 Event Info
 		                    </p>
                         </header>
@@ -59,27 +63,117 @@ function About(){
                                 3rd Place: $25 Giftcard
                             </p>
                             <p className="subtitle is-6">
+                                *Only registered Academies of Loudoun teams are eligible for prizes.
+                                <br></br>
                                 *Winning teams will receive an email from the Pi-a-thon Committee after the event.
                                 <br></br>
                                 *Prizes will be split evenly among team members.
                             </p>
                             <br></br>
                             <p className="title is-4">
+                                Schedule
+                            </p>
+                            <table className="table is-hoverable is-striped is-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Date
+                                        </th>
+                                        <th>
+                                            Task Topic
+                                        </th>
+                                        <th>
+                                            Task Numbers
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                        Day 1, Tuesday 3/9
+                                        </td>
+                                        <td>
+                                        Pi-uzzles (Puzzles)
+                                        </td>
+                                        <td>
+                                        1 - 5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        Day 2, Wednesday 3/10
+                                        </td>
+                                        <td>
+                                        Tri-pi-a (Trivia)
+                                        </td>
+                                        <td>
+                                        6 - 10
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        Day 3, Thursday 3/11
+                                        </td>
+                                        <td>
+                                        Pi-ddles (Riddles)
+                                        </td>
+                                        <td>
+                                        11 - 15
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        Day 4, Friday 3/12
+                                        </td>
+                                        <td>
+                                        Pi-th (Math)
+                                        </td>
+                                        <td>
+                                        16 - 20
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        Day 5, Saturday 3/13
+                                        </td>
+                                        <td>
+                                        No new tasks
+                                        </td>
+                                        <td>
+                                        Final submission date for all tasks!
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                            <br></br>
+                            <p className="title is-4">
                                 Who may participate?
                             </p>
                             <p className="subtitle is-5">
-                                Anyone with an LCPS Google account may register and participate,
+                                Competition is open to all current students and faculty of the Academies of Loudoun.
                                 <br></br>
-                                but only current students of the Academies of Loudoun are eligible for giftcard prizes.
+                                However, only students will be eligible to win prizes.
+                                <br></br>
+                                <span id="is-red">
+                                Teams must complete registration in order to be considered for a prize!
+                                </span>
                             </p>
                             <br></br>
                             <p className="title is-4">
                                 Registration
                             </p>
                             <p className="subtitle is-5">
-                                Registration will open throughout the event. 1 to 5 member(s) are allowed per team.
+                                Registration will be open throughout the event. 
                                 <br></br>
+                                1 to 5 member(s) are allowed per team. 
+                                <br></br>
+                                Teams must be solely composed of current Academies of Loudoun students.
                                 We heavily encourage team participation.
+                                <br></br>
+                                <span id="is-red">
+                                    Team Name will be used as team identification. Please submit an appropriate name.
+                                </span>
                                 <br></br>
                                 <br></br>
                                 <a className="button is-medium is-rounded has-shadow" target="_blank" rel="noopener noreferrer" href="http://bit.ly/piathon-register" id="piathon-button-register">
@@ -95,7 +189,7 @@ function About(){
 
                     <div className="card" id="piathon-card-rules">
                         <header className="card-header">
-		                    <p class="card-header-title" id="piathon-card-rules-title">
+		                    <p className="card-header-title" id="piathon-card-rules-title">
                                 Competition Rules
 		                    </p>
                         </header>
@@ -116,84 +210,12 @@ function About(){
                                 Submissions will close at 11:59 PM EST on Day 5. (3/13)
                                 <br></br>
                                 <br></br>
-                                <table class="table is-hoverable is-striped is-bordered">
-                                    <thead>
-                                        <th>
-                                            Date
-                                        </th>
-                                        <th>
-                                            Task Topic
-                                        </th>
-                                        <th>
-                                            Task Numbers
-                                        </th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                            Day 1, Tuesday 3/9
-                                            </td>
-                                            <td>
-                                            Pi-uzzles (Puzzles)
-                                            </td>
-                                            <td>
-                                            1 - 5
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            Day 2, Wednesday 3/10
-                                            </td>
-                                            <td>
-                                            Tri-pi-a (Trivia)
-                                            </td>
-                                            <td>
-                                            6 - 10
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            Day 3, Thursday 3/11
-                                            </td>
-                                            <td>
-                                            Pi-ddles (Riddles)
-                                            </td>
-                                            <td>
-                                            11 - 15
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            Day 4, Friday 3/12
-                                            </td>
-                                            <td>
-                                            Pi-th (Math)
-                                            </td>
-                                            <td>
-                                            16 - 20
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                            Day 5, Saturday 3/13
-                                            </td>
-                                            <td>
-                                            No new tasks
-                                            </td>
-                                            <td>
-                                            Last day to submit!
-                                            </td>
-                                        </tr>
-                                    </tbody>
-
-                                </table>
-                                <br></br>
-                                To complete each task, submit your <b>team name</b>, the <b>task number</b>, and <b>your corresponding answer</b> to the answer form below!
+                                After completion of each task, submit <b>team name</b>, <b>task number</b>, and the <b>corresponding answer</b> to the answer form below!
                                 <br></br>
                                 <br></br>
                                 Only 1 submission per team per task is necessary. 
                                 <br></br>
-                                Only the first valid submission will count towards your team's final score.
+                                Only the first valid submission will count towards a team's final score.
                             </p>
                             <a className="button is-medium is-rounded has-shadow" target="_blank" rel="noopener noreferrer" /* href="http://bit.ly/piathon-answer" */ id="piathon-button-register">
                                     <span className="icon">
@@ -214,14 +236,14 @@ function About(){
                                 <br></br>
                                 Each correct answer is given 8 <b>extra</b> Points.
                                 <br></br>
-                                Only the first valid submission will count towards your team's final score.
+                                Only the first valid submission will count towards a team's final score.
                             </p>
                             <br></br>
                             <p className="title is-4">
                                 Leaderboard
                             </p>
                             <p className="subtitle is-5">
-                                Leaderboard will be updated daily at 12:00 AM EST.
+                                Leaderboard is updated daily at 12:00 AM EST.
                             </p>
                             <p className="title is-4">
                                 
@@ -234,7 +256,7 @@ function About(){
 
                     <div className="card" id="piathon-card-rules">
                         <header className="card-header">
-		                    <p class="card-header-title" id="piathon-card-rules-title">
+		                    <p className="card-header-title" id="piathon-card-rules-title">
                                 Contact Us
 		                    </p>
                         </header>

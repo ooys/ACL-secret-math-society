@@ -441,6 +441,14 @@
     background-color:black;
 }
 
+#piathon-leaderboard-wrapper{
+    text-align:center;
+}
+
+#piathon-leaderboard{
+    margin:0 auto;
+}
+
 #piathon-clock{
     color: #363636;
     font-size:80px;
@@ -450,8 +458,9 @@
 .piathon-clock-top{
     margin-left:5%;
     height:auto;
-    color:black;
-    font-size:30px;
+    color:#363636;
+    font-weight:600;
+    font-size:2.5rem;
 }
 .piathon-clock-subtop{
     margin-left:5%;
@@ -461,6 +470,9 @@
 }
 
 
+#piathon-wrapper-2 #is-red{
+    color:red;
+}
 
 #piathon-card-info{
     margin-left:5%;
