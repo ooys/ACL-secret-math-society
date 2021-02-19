@@ -74,7 +74,7 @@ class Clock extends React.Component {
             return (
 
             <div>
-                <div class="piathon-clock-top">
+                <div className="piathon-clock-top">
                     Event begins in:
                 </div>
                 <div className="columns" id="piathon-clock">
