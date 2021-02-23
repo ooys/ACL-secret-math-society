@@ -164,7 +164,7 @@ function About(){
                                 Registration
                             </p>
                             <p className="subtitle is-5">
-                                Registration will be open throughout the event. 
+                                Registration closes at the end of the event. (3/14)
                                 <br></br>
                                 1 to 5 member(s) are allowed per team. 
                                 <br></br>

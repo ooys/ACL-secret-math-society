@@ -505,3 +505,20 @@
 .piathon-icon-anchor:hover{
     color:black;
 }
+
+
+.piathon-tasks .card{
+    margin-left:5%;
+    margin-right:5%;
+    background: #fff789;
+}
+.piathon-tasks .card-header{
+    font-size:25px;
+}
+.piathon-tasks img{
+    height:300px;
+    width:auto;
+}
+.piathon-tasks #background-is-dark{
+    background-color:#fffab3;
+}
