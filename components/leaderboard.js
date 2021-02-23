@@ -81,7 +81,7 @@ class Leaderboard extends Component {
                 </table>
                 <br></br>
                 <p classname="subtitle is-5">
-                    All registered teams are shown on leaderboard.
+                    Top 5 scoring teams are shown on leaderboard.
                     <br></br>
                     Leaderboard is updated daily at 12:00AM EST.
                 </p>

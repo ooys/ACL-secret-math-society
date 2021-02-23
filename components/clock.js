@@ -14,6 +14,119 @@ var d6 = "March 13, 2021 23:59:59"
 // d5 = "February 14, 2021 3:44:40"
 // d6 = "February 14, 2021 3:44:50"
 
+function toggledisplay(target){
+    var x = document.getElementById(target);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
+
+const TaskD1 = () =>{
+    return(
+    <div className="piathon-tasks">
+        <div className="card" id="piathon-card-tasksD1">
+            <a onClick={() => toggledisplay("piathon-card-tasksD1-content")}>
+            <header className="card-header">
+                <p className="card-header-title">
+                    Tasks - Day 1: Pi-uzzles
+		        </p>
+            </header>
+            </a>
+            <div className="card-content" id="piathon-card-tasksD1-content">
+                <div id="piathon-task-1">
+                    <p className="title is-4">
+                        Task #1
+                    </p>
+                    <p className="subtitle is-5">
+                        What is the minimum amount of moves required to rearrange 
+                        the matchsticks from the image below to form the word: PiE? 
+                    </p>
+                    <p>
+                        Hint: All moves count.
+                        <br></br>
+                        Expected answer format: Integer.
+                    </p>
+                    <br></br>
+                    <img src="/piathon/tasks/t1_2.png" id="background-is-dark"></img>
+                </div>
+                <br></br>
+                <br></br>
+                <div id="piathon-task-2">
+                    <p className="title is-4">
+                        Task #2
+                    </p>
+                    <p className="subtitle is-5">
+                        What word does this image represent?
+                    </p>
+                    <p>
+                        Expected answer format: Text.
+                    </p>
+                    <br></br>
+                    <img src="/piathon/tasks/t2_2.png" id="background-is-dark"></img>
+                </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-2">
+                    <p className="title is-4">
+                        Task #3
+                    </p>
+                    <p className="subtitle is-5">
+                    Shown below our pies of different sizes in three square boxes of equal size. 
+                    Assume all pies fit perfectly without overlaps. Which box contains the most pie? (by volume)
+                    </p>
+                    <p>
+                        Expected answer format: Text.
+                    </p>
+                    <br></br>
+                    <img src="/piathon/tasks/t3.png"></img>
+                </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-2">
+                    <p className="title is-4">
+                        Task #4
+                    </p>
+                    <p>
+                        Expected answer format: Integer.
+                    </p>
+                    <br></br>
+                    <img src="/piathon/tasks/t4_2.png" id="background-is-dark"></img>
+                </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-2">
+                    <p className="title is-4">
+                        Task #5
+                    </p>
+                    <p className="subtitle is-5">
+                    ICE = 935
+                    <br></br>
+                    CAKE = 31115
+                    <br></br>
+                    LIME = 129145
+                    <br></br>
+                    PIE = ?
+                    </p>
+                    <p>
+                        Expected answer format: Integer.
+                    </p>
+                </div>
+
+
+
+            </div>
+        </div>
+        <hr className="piathon-wrapper-2-hr"></hr>
+    </div>
+    )
+}
+
+
 class Clock extends React.Component {
     constructor(props) {
       super(props);
@@ -87,6 +200,7 @@ class Clock extends React.Component {
                 </div>
                 <br></br>
                 <hr className="piathon-wrapper-2-hr"></hr>
+                {/* <TaskD1/> */}
             </div>
             );
         }else if (new Date(d2) >= new Date()){
@@ -108,7 +222,6 @@ class Clock extends React.Component {
                     </div>
                     D1Probs
                     <hr className="piathon-wrapper-2-hr"></hr>
-
                 </div>
             );
         }else if (new Date(d3) >= new Date()){
@@ -130,7 +243,6 @@ class Clock extends React.Component {
                     </div>
                     D2Probs
                     <hr className="piathon-wrapper-2-hr"></hr>
-
                 </div>
             );
         }else if (new Date(d4) >= new Date()){
