@@ -217,7 +217,7 @@ function About(){
                                 <br></br>
                                 Only the first valid submission will count towards a team's final score.
                             </p>
-                            <a className="button is-medium is-rounded has-shadow" target="_blank" rel="noopener noreferrer" /* href="http://bit.ly/piathon-answer" */ id="piathon-button-register">
+                            <a className="button is-medium is-rounded has-shadow" target="_blank" rel="noopener noreferrer" href="http://bit.ly/piathon-answer" id="piathon-button-submission">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faArrowAltCircleRight}></FontAwesomeIcon>
                                     </span>
@@ -265,7 +265,7 @@ function About(){
                                 Email Us
                             </p>
                             <p className="subtitle is-5">
-                                Yihong Song - Pi Day Committee &nbsp;
+                                Yihong Song - ACL Pi Day Committee, Secret Math Society &nbsp;
                                 <a className="piathon-icon-anchor" target="_blank" rel="noopener noreferrer" href="mailto:1036566@lcps.org">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faEnvelope} ></FontAwesomeIcon>
@@ -285,7 +285,7 @@ function About(){
                                 Email our Sponsors
                             </p>
                             <p className="subtitle is-5">
-                                Dr. Linda Gantz - Pi Day Committee&nbsp;
+                                Dr. Linda Gantz - ACL Pi Day Committee&nbsp;
                                 <a className="piathon-icon-anchor" target="_blank" rel="noopener noreferrer" href="mailto:linda.gantz@lcps.org">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faEnvelope} ></FontAwesomeIcon>
@@ -293,7 +293,7 @@ function About(){
                                 </a>
                                 <br></br>
                                 <br></br>
-                                Mrs. Gina Craun - Pi Day Committee&nbsp;
+                                Mrs. Gina Craun - ACL Pi Day Committee&nbsp;
                                 <a className="piathon-icon-anchor" target="_blank" rel="noopener noreferrer" href="mailto:gina.craun@lcps.org">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faEnvelope} ></FontAwesomeIcon>
@@ -304,9 +304,30 @@ function About(){
                         </div>
                     </div>
                     <br></br>
-                    {/* <p>
-                        Special thanks to...
-                    </p> */}
+
+                    <div className="card" id="piathon-card-thanks">
+                        <div className="card-content">
+                            <div className="title is-4">
+                                Special thanks to:
+                            </div>
+                            <p className="subtitle is-5">
+                                <b>ACL Pi Day Committee</b> - for overall planning and organization,
+                                <br></br>
+                                <br></br>
+                                <b>ACL Secret Math Society</b> - for creation of Pi-a-thon tasks,
+                                <br></br>
+                                <br></br>
+                                <b>ACL PTSA</b> - for funding of Pi-a-thon prizes and awards,
+                                <br></br>
+                                <br></br>
+                                <b>Morgan Norton '20</b> - for cover artwork,
+                                <br></br>
+                                <br></br>
+                                <b>And to everyone who participated in Pi-a-thon 2021!</b>
+                            </p>
+                        </div>
+                    </div>
+                    <br></br>
 
                 </div>
             </div>
