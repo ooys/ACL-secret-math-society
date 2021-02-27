@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faArrowAltCircleRight} from '@fortawesome/free-solid-svg-icons'
 
 var d1 = "March 9, 2021 0:0:0"
 var d2 = "March 10, 2021 0:0:0"
@@ -7,20 +9,53 @@ var d4 = "March 12, 2021 0:0:0"
 var d5 = "March 13, 2021 0:0:0"
 var d6 = "March 13, 2021 23:59:59"
 // Test Purposes
-// d1 = "February 14, 2021 3:44:0"
-// d2 = "February 14, 2021 3:44:10"
-// d3 = "February 14, 2021 3:44:20"
-// d4 = "February 14, 2021 3:44:30"
-// d5 = "February 14, 2021 3:44:40"
-// d6 = "February 14, 2021 3:44:50"
+// d1 = "February 27, 2021 15:25:0"
+// d2 = "February 27, 2021 15:25:30"
+// d3 = "February 27, 2021 15:26:00"
+// d4 = "February 27, 2021 15:26:30"
+// d5 = "February 27, 2021 15:27:00"
+// d6 = "February 27, 2021 15:27:30"
 
 function toggledisplay(target){
     var x = document.getElementById(target);
-    if (x.style.display === "none") {
+    console.log(x.style.display)
+    if (x.style.display === "none" || x.style.display === "") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
     }
+}
+
+const MultipleChoice = ({o1,o2,o3,o4}) =>{
+    return(
+        <div className="subtitle is-5">
+            <div>
+                <b>A.</b> {o1}
+            </div>
+            <div>
+                <b>B.</b> {o2}
+            </div>
+            <div>
+                <b>C.</b> {o3}
+            </div>
+            <div>
+                <b>D.</b> {o4}
+            </div>
+        </div>
+    )
+}
+
+const SubmissionButton = () =>{
+    return(
+        <div id="piathon-tasks-submissions-wrapper">
+            <a className="button is-medium is-rounded has-shadow" target="_blank" rel="noopener noreferrer" href="http://bit.ly/piathon-answer" id="piathon-tasks-button-submissions">
+                <span className="icon">
+                    <FontAwesomeIcon icon={faArrowAltCircleRight}></FontAwesomeIcon>
+                </span>
+                <span>Task Answer Submissions</span>
+            </a>
+        </div>
+    )
 }
 
 const TaskD1 = () =>{
@@ -30,7 +65,7 @@ const TaskD1 = () =>{
             <a onClick={() => toggledisplay("piathon-card-tasksD1-content")}>
             <header className="card-header">
                 <p className="card-header-title">
-                    Tasks - Day 1: Pi-uzzles
+                    Day 1: Pi-uzzles
 		        </p>
             </header>
             </a>
@@ -121,16 +156,324 @@ const TaskD1 = () =>{
 
             </div>
         </div>
-        <hr className="piathon-wrapper-2-hr"></hr>
     </div>
     )
 }
 
+const TaskD2 = () =>{
+    return(
+    <div className="piathon-tasks">
+        <div className="card" id="piathon-card-tasksD2">
+            <a onClick={() => toggledisplay("piathon-card-tasksD2-content")}>
+            <header className="card-header">
+                <p className="card-header-title">
+                    Day 2: Tri-pi-a
+		        </p>
+            </header>
+            </a>
+            <div className="card-content" id="piathon-card-tasksD2-content">
+                <div id="piathon-task-4">
+                    <p className="title is-4">
+                        Task #6
+                    </p>
+                    <p className="subtitle is-5">
+                        How many Academy Awards (Oscars) did the movie 
+                        “Life of Pi’ win in 2012?
+                    </p>
+                    <MultipleChoice
+                        o1="Four"
+                        o2="Three"
+                        o3="Two"
+                        o4="Five"
+                    />
+                </div>
+                <br></br>
+                <br></br>
+                <div id="piathon-task-7">
+                    <p className="title is-4">
+                        Task #7
+                    </p>
+                    <p className="subtitle is-5">
+                        Pi is derived from the first letter of which Greek word? 
+                    </p>
+                    <MultipleChoice
+                        o1="Peripheral"
+                        o2="Perimeter"
+                        o3="Panellas"
+                        o4="Panera"
+                    />
+               </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-8">
+                    <p className="title is-4">
+                        Task #8
+                    </p>
+                    <p className="subtitle is-5">
+                        Who started Pi day?                    
+                    </p>
+                    <MultipleChoice
+                        o1="Pi Day was organized by Larry Shaw at the San Francisco Exploratorium 
+                            where Shaw worked as a physicist."
+                        o2="An unknown group of scientists wanting an excuse to celebrate a 
+                            famous scientist’s birthday."
+                        o3="Organized by Thomas Owens, an enthusiast of celebrating mathematics 
+                            and sharing it with his students at Lloyd-Murray Academy."
+                        o4="It is unclear who started pi day, as it has always been a celebration. "
+                    />
+                </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-9">
+                    <p className="title is-4">
+                        Task #9
+                    </p>
+                    <p className="subtitle is-5">
+                        What is Stargazy pie made of?
+                    </p>
+                    <MultipleChoice
+                        o1="Grapes looking like eyeballs"
+                        o2="Fish-heads looking at the sky"
+                        o3="Strawberries arranged as bright stars"
+                        o4="Sprinkles arranged as the night sky"
+                    />
+                </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-10">
+                    <p className="title is-4">
+                        Task #10
+                    </p>
+                    <p className="subtitle is-5">
+                        What is the practice of memorizing large numbers of digits of Pi?
+                    </p>
+                    <MultipleChoice
+                        o1="Pimemology"
+                        o2="Philology"
+                        o3="Piphilology"
+                        o4="Googology"
+                    />
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    )
+}
+
+const TaskD3 = () =>{
+    return(
+    <div className="piathon-tasks">
+        <div className="card" id="piathon-card-tasksD3">
+            <a onClick={() => toggledisplay("piathon-card-tasksD3-content")}>
+            <header className="card-header">
+                <p className="card-header-title">
+                    Day 3: Pi-ddles
+		        </p>
+            </header>
+            </a>
+            <div className="card-content" id="piathon-card-tasksD3-content">
+                <div id="piathon-task-11">
+                    <p className="title is-4">
+                        Task #11
+                    </p>
+                    <p className="subtitle is-5">
+                        Find the hidden message in this poem:
+                        <br></br>
+                        <br></br>
+                        A CIRCLE is round. duh. Everybody knows that. 
+                        dId you know THat Einstein was boRn on marcH 14th? 
+                        it’s no wonder thAt he’S a genIus! i bet you doN’t 
+                        know that pi is the FIrst letter of periphery and 
+                        perimeter in greek. pi goes oN forever, but the number 
+                        123456 does not appear In ThE first milliOn digits! 
+                        since pi is infinite and ouR calculators rouNd it at 
+                        sOme point, we teChnically dOn’t know the exact 
+                        ciRcumfereNcE of any calculated ciRcleS!
+                    </p>
+                    <p>
+                        Expected answer format: Text.
+                    </p>
+                </div>
+                <br></br>
+                <br></br>
+                <div id="piathon-task-12">
+                    <p className="title is-4">
+                        Task #12
+                    </p>
+                    <p className="subtitle is-5">
+                        How many pi(e)s are in this image?
+                    </p>
+                    <p>
+                        Expected answer format: Integer.
+                    </p>
+                    <br></br>
+                    <img src="/piathon/tasks/t12.png" id="piathon-image-is-large"></img>
+               </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-13">
+                    <p className="title is-4">
+                        Task #13
+                    </p>
+                    <p className="subtitle is-5">
+                        You find this at the head of a python, 
+                        the middle of a hospital, and at the tail of platypi.                   
+                    </p>
+                    <p>
+                        Expected answer format: Text.
+                    </p>
+                </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-14">
+                    <p className="title is-4">
+                        Task #14
+                    </p>
+                    <p className="subtitle is-5">
+                        Unscramble ENRMECAMIEFCE/ITERDCRU
+                    </p>
+                    <p>
+                        Expected answer format: Text.
+                    </p>
+                </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-15">
+                    <p className="title is-4">
+                        Task #15
+                    </p>
+                    <p className="subtitle is-5">
+                        Name of a famous youtuber who likes to wear cat ears, 
+                        play video games, and has a cool chair.
+                    </p>
+                    <p>
+                        Hint: His name is associated with a  mathematical ratio.
+                        <br></br>
+                        Expected answer format: Text.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    )
+}
+
+const TaskD4 = () =>{
+    return(
+    <div className="piathon-tasks">
+        <div className="card" id="piathon-card-tasksD4">
+            <a onClick={() => toggledisplay("piathon-card-tasksD4-content")}>
+            <header className="card-header">
+                <p className="card-header-title">
+                    Day 4: Pi-th
+		        </p>
+            </header>
+            </a>
+            <div className="card-content" id="piathon-card-tasksD4-content">
+                <div id="piathon-task-16">
+                    <p className="title is-4">
+                        Task #16
+                    </p>
+                    <p className="subtitle is-5">
+                        Tom baked a pie with crust of uniform thickness around and below the pie.
+                        If Tom wants to eat <u>only</u> the crust of the pie, 
+                        what volume of crust (in cubic cm.) will he eat? 
+                    </p>
+                    <p>
+                        Note: The image below is an image containing dimensions. 
+                        Tom is very hungry, so he eats the crust of an entire pie containing slices 
+                        of these dimensions.
+                        <br></br>
+                        Expected answer format: Decimal rounded to thousandths.
+                    </p>
+                    <br></br>
+                    <img src="/piathon/tasks/t16.png"></img>
+                </div>
+                <br></br>
+                <br></br>
+                <div id="piathon-task-17">
+                    <p className="title is-4">
+                        Task #17
+                    </p>
+                    <p className="subtitle is-5">
+                        Alice and Bob each have a pie. Suppose Alice flips hers 1000 times, 
+                        and Bob flips his 999 times. What is the probability that the number 
+                        of times Alice lands the pie on the bottom (as compared to it landing 
+                        upside-down and ruining it) will be greater than the number of times 
+                        that Bob lands the pie? (assume there is a 31.41% chance of a pie 
+                        landing on the the bottom)
+
+                    </p>
+                    <p>
+                        Expected answer format: Decimal rounded to thousandths.
+                    </p>
+                    <br></br>
+                    <img src="/piathon/tasks/t17_2.png" id="background-is-dark"></img>
+               </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-18">
+                    <p className="title is-4">
+                        Task #18
+                    </p>
+                    <p className="subtitle is-5">
+                        A car is driving at a constant velocity of 2pi meters per 
+                        second around a circle of radius 4. In 20 seconds, 
+                        how many revolutions can the car drive around the circle?                  
+                    </p>
+                    <p>
+                        Expected answer format: Decimal rounded to thousandths.
+                    </p>
+                </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-19">
+                    <p className="title is-4">
+                        Task #19
+                    </p>
+                    <p className="subtitle is-5">
+                        What is the area under the function y = pi from x = 0 to x = 2?
+                    </p>
+                    <p>
+                        Expected answer format: Decimal rounded to thousandths.
+                    </p>
+                </div>
+
+                <br></br>
+                <br></br>
+                <div id="piathon-task-20">
+                    <p className="title is-4">
+                        Task #20
+                    </p>
+                    <p className="subtitle is-5">
+                        If P, I, and E are roots of x<sup>3</sup> + 2x<sup>2</sup> + 5x + 9, 
+                        what is P * I * E?
+                    </p>
+                    <p>
+                        Expected answer format: Decimal rounded to thousandths.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    )
+}
 
 class Clock extends React.Component {
     constructor(props) {
       super(props);
-      var cd = Math.floor((new Date(d1) - new Date())/1000)
+      var cd = 0
       var second = cd % (60)
       var minute = Math.floor(cd % (60*60)/60)
       var hour = Math.floor(cd % (60*60*24)/60/60)
@@ -188,7 +531,7 @@ class Clock extends React.Component {
 
             <div>
                 <div className="piathon-clock-top">
-                    Event begins in:
+                    Competition starts in:
                 </div>
                 <div className="columns" id="piathon-clock">
                     <div className="column is-centered" id="root">
@@ -200,14 +543,24 @@ class Clock extends React.Component {
                 </div>
                 <br></br>
                 <hr className="piathon-wrapper-2-hr"></hr>
-                {/* <TaskD1/> */}
+                {/* <div className="title is-2" id="piathon-task-top">Released Tasks</div>
+                <SubmissionButton/>
+                <br></br>
+                <TaskD1/>
+                <br></br>
+                <TaskD2/>
+                <br></br>
+                <TaskD3/>
+                <br></br>
+                <TaskD4/>
+                <hr className="piathon-wrapper-2-hr"></hr> */}
             </div>
             );
         }else if (new Date(d2) >= new Date()){
             return (
                 <div>
                     <div className="piathon-clock-top">
-                        Event ends in:&nbsp;
+                        Competition ends in:&nbsp;
                         {(this.state.days+4).toString()}d&nbsp;
                         {this.state.hours.toString()}h&nbsp;
                         {this.state.minutes.toString()}m&nbsp;
@@ -220,7 +573,11 @@ class Clock extends React.Component {
                         {this.state.minutes.toString()}m&nbsp;
                         {this.state.seconds.toString()}s
                     </div>
-                    D1Probs
+                    <hr className="piathon-wrapper-2-hr"></hr>
+                    <div className="title is-2" id="piathon-task-top">Released Tasks</div>
+                    <SubmissionButton/>
+                    <br></br>
+                    <TaskD1/>
                     <hr className="piathon-wrapper-2-hr"></hr>
                 </div>
             );
@@ -228,7 +585,7 @@ class Clock extends React.Component {
             return (
                 <div>
                     <div className="piathon-clock-top">
-                        Event ends in:&nbsp;
+                        Competition ends in:&nbsp;
                         {(this.state.days+3).toString()}d&nbsp;
                         {this.state.hours.toString()}h&nbsp;
                         {this.state.minutes.toString()}m&nbsp;
@@ -241,15 +598,21 @@ class Clock extends React.Component {
                         {this.state.minutes.toString()}m&nbsp;
                         {this.state.seconds.toString()}s
                     </div>
-                    D2Probs
                     <hr className="piathon-wrapper-2-hr"></hr>
+                    <div className="title is-2" id="piathon-task-top">Released Tasks</div>
+                    <SubmissionButton/>
+                    <br></br>
+                    <TaskD1/>
+                    <br></br>
+                    <TaskD2/>
+                    <hr className="piathon-wrapper-2-hr"></hr> 
                 </div>
             );
         }else if (new Date(d4) >= new Date()){
             return (
                 <div>
                     <div className="piathon-clock-top">
-                        Event ends in:&nbsp;
+                        Competition ends in:&nbsp;
                         {(this.state.days+2).toString()}d&nbsp;
                         {this.state.hours.toString()}h&nbsp;
                         {this.state.minutes.toString()}m&nbsp;
@@ -262,16 +625,23 @@ class Clock extends React.Component {
                         {this.state.minutes.toString()}m&nbsp;
                         {this.state.seconds.toString()}s
                     </div>
-                    D3Probs
                     <hr className="piathon-wrapper-2-hr"></hr>
-
+                    <div className="title is-2" id="piathon-task-top">Released Tasks</div>
+                    <SubmissionButton/>
+                    <br></br>
+                    <TaskD1/>
+                    <br></br>
+                    <TaskD2/>
+                    <br></br>
+                    <TaskD3/>
+                    <hr className="piathon-wrapper-2-hr"></hr> 
                 </div>
             );
         }else if (new Date(d5) >= new Date()){
             return (
                 <div>
                     <div className="piathon-clock-top">
-                        Event ends in:&nbsp;
+                        Competition ends in:&nbsp;
                         {(this.state.days+1).toString()}d&nbsp;
                         {this.state.hours.toString()}h&nbsp;
                         {this.state.minutes.toString()}m&nbsp;
@@ -280,16 +650,25 @@ class Clock extends React.Component {
                     <div className="piathon-clock-subtop">
                         All tasks are released.
                     </div>
-                    D4Probs
                     <hr className="piathon-wrapper-2-hr"></hr>
-
+                    <div className="title is-2" id="piathon-task-top">Released Tasks</div>
+                    <SubmissionButton/>
+                    <br></br>
+                    <TaskD1/>
+                    <br></br>
+                    <TaskD2/>
+                    <br></br>
+                    <TaskD3/>
+                    <br></br>
+                    <TaskD4/>
+                    <hr className="piathon-wrapper-2-hr"></hr> 
                 </div>
             );
         }else if (new Date(d6) >= new Date()){
             return (
                 <div>
-                    <div className="piathon-clock-top">
-                        Event ends in:&nbsp;
+                    <div className="piathon-clock-top" id="is-red">
+                        Competition ends in:&nbsp;
                         {this.state.days.toString()}d&nbsp;
                         {this.state.hours.toString()}h&nbsp;
                         {this.state.minutes.toString()}m&nbsp;
@@ -298,16 +677,27 @@ class Clock extends React.Component {
                     <div className="piathon-clock-subtop">
                         All tasks are released. Final day to submit answers!
                     </div>
-                    D4Probs + Final day!
                     <hr className="piathon-wrapper-2-hr"></hr>
-
+                    <div className="title is-2" id="piathon-task-top">Released Tasks</div>
+                    <SubmissionButton/>
+                    <br></br>
+                    <TaskD1/>
+                    <br></br>
+                    <TaskD2/>
+                    <br></br>
+                    <TaskD3/>
+                    <br></br>
+                    <TaskD4/>
+                    <hr className="piathon-wrapper-2-hr"></hr> 
                 </div>
             );
         }else{
             return(
             <div>
                 <div className="piathon-clock-top">
-                    Event has ended. 
+                    2021 Pi-a-thon has ended. 
+                    <br></br>
+                    We have stopped collecting submissions.
                 </div>
                 <div className="piathon-clock-subtop">
                     Thank you for participating in the 2021 Pi-a-thon!

@@ -497,6 +497,32 @@
     visibility: visible;
     animation:none;
 }
+
+#piathon-card-thanks{
+    margin-left:5%;
+    margin-right:5%;
+    background: #f19ea1;
+}
+
+
+
+
+#piathon-button-submissions{
+    visibility: visible;
+    animation:none;
+    background-color:white;
+}
+
+#piathon-tasks-button-submissions{
+    visibility: visible;
+    animation:none;
+    background-color:white;
+}
+
+#piathon-tasks-submissions-wrapper{
+    text-align:center;
+}
+
 .piathon-icon-anchor{
     color:#363636;
     margin-top:0px;
@@ -521,4 +547,17 @@
 }
 .piathon-tasks #background-is-dark{
     background-color:#fffab3;
+}
+
+#piathon-task-top{
+    text-align:center;
+}
+
+.piathon-tasks .card-content{
+    display:none;
+}
+
+#piathon-image-is-large{
+    width: 750px;
+    height:auto;
 }
