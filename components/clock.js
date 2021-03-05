@@ -9,12 +9,12 @@ var d4 = "March 12, 2021 0:0:0"
 var d5 = "March 13, 2021 0:0:0"
 var d6 = "March 13, 2021 23:59:59"
 // Test Purposes
-// d1 = "February 27, 2021 15:25:0"
-// d2 = "February 27, 2021 15:25:30"
-// d3 = "February 27, 2021 15:26:00"
-// d4 = "February 27, 2021 15:26:30"
-// d5 = "February 27, 2021 15:27:00"
-// d6 = "February 27, 2021 15:27:30"
+// d1 = "March 4, 2021 19:01:0"
+// d2 = "March 4, 2021 19:01:30"
+// d3 = "March 4, 2021 19:02:0"
+// d4 = "March 4, 2021 19:02:30"
+// d5 = "March 4, 2021 19:03:0"
+// d6 = "March 4, 2021 19:03:30"
 
 function toggledisplay(target){
     var x = document.getElementById(target);
@@ -178,7 +178,7 @@ const TaskD2 = () =>{
                     </p>
                     <p className="subtitle is-5">
                         How many Academy Awards (Oscars) did the movie 
-                        “Life of Pi’ win in 2012?
+                        “Life of Pi" win in 2012?
                     </p>
                     <MultipleChoice
                         o1="Four"
