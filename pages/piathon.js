@@ -245,8 +245,12 @@ function About(){
                             <p className="subtitle is-5">
                                 Leaderboard is updated daily at 12:00 AM EST.
                             </p>
+                            <br></br>
                             <p className="title is-4">
-                                
+                                Tiebreakers
+                            </p>
+                            <p className="subtitle is-5">
+                                In the event of a tie in total scores, the team with the faster cumulative submission time has the advantage.
                             </p>
                         </div>
                     </div>
