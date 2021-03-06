@@ -455,6 +455,13 @@
     text-align: center;
     /* text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0); */
 }
+@media (max-width: 520px) {
+
+    #piathon-clock{
+        font-size:50px;
+     }
+
+}
 .piathon-clock-top{
     margin-left:5%;
     height:auto;
