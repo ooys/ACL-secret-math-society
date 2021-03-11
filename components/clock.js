@@ -45,6 +45,31 @@ const MultipleChoice = ({o1,o2,o3,o4}) =>{
     )
 }
 
+const MultipleChoiceSix = ({o1,o2,o3,o4,o5,o6}) =>{
+    return(
+        <div className="subtitle is-5">
+            <div>
+                <b>A.</b> {o1}
+            </div>
+            <div>
+                <b>B.</b> {o2}
+            </div>
+            <div>
+                <b>C.</b> {o3}
+            </div>
+            <div>
+                <b>D.</b> {o4}
+            </div>
+            <div>
+                <b>E.</b> {o5}
+            </div>
+            <div>
+                <b>F.</b> {o6}
+            </div>
+        </div>
+    )
+}
+
 const SubmissionButton = () =>{
     return(
         <div id="piathon-tasks-submissions-wrapper">
@@ -405,16 +430,24 @@ const TaskD4 = () =>{
                         Task #17
                     </p>
                     <p className="subtitle is-5">
-                        Alice and Bob each have a pie. Suppose Alice flips hers 1000 times, 
-                        and Bob flips his 999 times. What is the probability that the number 
-                        of times Alice lands the pie on the bottom (as compared to it landing 
-                        upside-down and ruining it) will be greater than the number of times 
-                        that Bob lands the pie? (assume there is a 31.41% chance of a pie 
-                        landing on the the bottom)
-
+                        Bob’s bakery specializes in two kinds of pies: 
+                        rhubarb pies and avocado pies. 
+                        Yesterday, Bob decided to produce 
+                        4 pies in total. Assume that Bob chose each 
+                        pie’s flavor randomly and the chances of producing 
+                        each pie is equal, which of the following outcomes is 
+                        most likely?
                     </p>
+                    <MultipleChoiceSix
+                        o1="Bob made 4 rhubarb pies."
+                        o2="Bob made 4 avocado pies."
+                        o3="Bob made 2 avocado pies and 2 rhubarb pies."
+                        o4="Bob made 3 pies of one flavor and 1 pie of the other flavor."
+                        o5="All of the above outcomes are equally likely."
+                        o6="There is insufficient information."
+                    />
                     <p>
-                        Expected answer format: Decimal rounded to thousandths.
+                        Expected answer format: Text.
                     </p>
                     <br></br>
                     <img src="/piathon/tasks/t17_2.png" id="background-is-dark"></img>
