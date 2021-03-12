@@ -490,7 +490,7 @@ const TaskD4 = () =>{
                         Task #20
                     </p>
                     <p className="subtitle is-5">
-                        If P, I, and E are roots of x<sup>3</sup> + 2x<sup>2</sup> + 5x + 9, 
+                        If P, I, and E are roots of x<sup>3</sup> - 5x<sup>2</sup> + 3x + 9, 
                         what is P * I * E?
                     </p>
                     <p>
