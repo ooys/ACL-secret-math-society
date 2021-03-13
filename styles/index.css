@@ -469,6 +469,14 @@
     font-weight:600;
     font-size:2.5rem;
 }
+.piathon-clock-top-red{
+    margin-left:5%;
+    height:auto;
+    color:red;
+    font-weight:600;
+    font-size:2.5rem;
+}
+
 .piathon-clock-subtop{
     margin-left:5%;
     height:auto;

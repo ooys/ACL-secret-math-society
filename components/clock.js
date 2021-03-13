@@ -700,7 +700,7 @@ class Clock extends React.Component {
         }else if (new Date(d6) >= new Date()){
             return (
                 <div>
-                    <div className="piathon-clock-top" id="is-red">
+                    <div className="piathon-clock-top-red">
                         Competition ends in:&nbsp;
                         {this.state.days.toString()}d&nbsp;
                         {this.state.hours.toString()}h&nbsp;
