@@ -1,6 +1,7 @@
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import Clock from '../components/clock'
+import Closing from '../components/closing'
 import Leaderboard from '../components/leaderboard'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faDiscord } from '@fortawesome/free-brands-svg-icons'
@@ -36,8 +37,10 @@ function About(){
                         An Academies of Loudoun competition celebrating 2021 Pi Day.
                     </div>
                     <hr className="piathon-wrapper-2-hr"></hr>
-                    <Clock />
+                    
+                    <Closing />
                     <Leaderboard />
+                    <Clock />
 
                     <div className="card" id="piathon-card-info">
                         <header className="card-header">
@@ -217,7 +220,7 @@ function About(){
                                 <br></br>
                                 Only the first valid submission will count towards a team's final score.
                             </p>
-                            <a className="button is-medium is-rounded has-shadow" target="_blank" rel="noopener noreferrer" href="http://bit.ly/piathon-answer" id="piathon-button-submission">
+                            <a className="button is-medium is-rounded has-shadow" target="_blank" rel="noopener noreferrer" /*href="http://bit.ly/piathon-answer"*/ id="piathon-button-submission">
                                     <span className="icon">
                                         <FontAwesomeIcon icon={faArrowAltCircleRight}></FontAwesomeIcon>
                                     </span>
@@ -225,7 +228,7 @@ function About(){
                                 </a>
                             <p className="subtitle is-6">
                                 <br></br>
-                                *Form will accept submissions when event begins.
+                                *Form no longer accepting submissions.
                             </p>
                             <br></br>
                             <p className="title is-4">

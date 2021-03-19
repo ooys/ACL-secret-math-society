@@ -4,6 +4,11 @@
 /* *{
     background-color:#363636;
 } */
+
+
+/* Add Animation On Scroll Library */
+
+
 @keyframes slideInFromRight {
     0% {
       transform: translateX(100%);
@@ -567,6 +572,9 @@
 #piathon-task-top{
     text-align:center;
 }
+#piathon-task-subtop{
+    text-align:center;
+}
 
 .piathon-tasks .card-content{
     display:none;
@@ -575,4 +583,55 @@
 #piathon-image-is-large{
     width: 750px;
     height:auto;
+}
+
+
+
+
+
+/* Winners & Stats */
+
+.piathon-winner-top{
+    margin-left:5%;
+    margin-right:5%;
+    height:auto;
+    color:#363636;
+    font-weight:600;
+    font-size:2.5rem;
+    display:block;
+}
+
+.piathon-winner-top .column{
+    height:auto;
+    color:#363636;
+    text-align: center;
+}
+
+#piathon-winner-image{
+    width:900px;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#piathon-winner-columns{
+    height:auto;
+    margin-top:10px;
+}
+
+#piathon-winner-columns .column{
+    transition: all 0.5s;
+}
+
+#piathon-winner-columns .column:hover{
+    color:#fff789;
+    /* transform:translateY(-8px); */
+    font-size:larger;
+    border-style:solid;
+    transition: all 0.5s;
+}
+
+#piathon-winner-columns .piathon-column-header{
+    font-size:25px;
 }
