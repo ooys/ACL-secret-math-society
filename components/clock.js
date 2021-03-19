@@ -725,23 +725,37 @@ class Clock extends React.Component {
                 </div>
             );
         }else{
+            // return(
+            // <div>
+            //     <div className="piathon-clock-top">
+            //         2021 Pi-a-thon has ended. 
+            //         <br></br>
+            //         We have stopped collecting submissions.
+            //     </div>
+            //     <div className="piathon-clock-subtop">
+            //         Thank you for participating in the 2021 Pi-a-thon!
+            //         <br></br>
+            //         Winners will be contacted through email.
+            //         <br></br>
+            //         <br></br>
+            //     </div>
+            //     <hr className="piathon-wrapper-2-hr"></hr>
+            // </div>
+            // );
             return(
-            <div>
-                <div className="piathon-clock-top">
-                    2021 Pi-a-thon has ended. 
+                <div>
+                    <div className="title is-2" id="piathon-task-top">Pi-a-thon 2021 Tasks</div>
+                    <div className="subtitle is-4" id="piathon-task-subtop">Click to expand.</div>
+                    <TaskD1/>
                     <br></br>
-                    We have stopped collecting submissions.
+                    <TaskD2/>
+                    <br></br>
+                    <TaskD3/>
+                    <br></br>
+                    <TaskD4/>
+                    <hr className="piathon-wrapper-2-hr"></hr> 
                 </div>
-                <div className="piathon-clock-subtop">
-                    Thank you for participating in the 2021 Pi-a-thon!
-                    <br></br>
-                    Winners will be contacted through email.
-                    <br></br>
-                    <br></br>
-                </div>
-                <hr className="piathon-wrapper-2-hr"></hr>
-            </div>
-            );
+            )
         }
     }
   }

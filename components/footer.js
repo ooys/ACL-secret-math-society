@@ -74,9 +74,9 @@ function Footer(){
 
                         <div className="column is-hidden-mobile" id="column-footer-right">
                             <p id="column-footer-right-text">
-                                <b>Secret Math Society</b> is an Academies of Loudoun club
+                                <b>Secret Math Society</b> is a non-profit organization
                                  operated in its entirety by students and 
-                                 sponsored by Academies of Loudoun faculty.
+                                 sponsored by Academies of Loudoun faculty and PTSA.
                             </p>
                             <a id="column-footer-right-anchor" target="_blank" rel="noopener noreferrer" href="https://www.lcps.org/acl">
                                 <img
