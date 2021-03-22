@@ -199,11 +199,11 @@ function Index(){
                                 Upcoming Meeting Dates
                             </div>
                             <div id="column-4-right-bot-text">
-                                February 23, 2021 (Tuesday)
-                                <br></br>
-                                March 9, 2021 (Tuesday)
-                                <br></br>
                                 March 23, 2021 (Tuesday)
+                                <br></br>
+                                April 6, 2021 (Tuesday)
+                                <br></br>
+                                April 20, 2021 (Tuesday)
                             </div>
                         </div>
                     </div>
