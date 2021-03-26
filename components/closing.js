@@ -1,17 +1,20 @@
-import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrophy, faUser, faTasks, faUsers } from '@fortawesome/free-solid-svg-icons'
+import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faTrophy,
+    faUser,
+    faTasks,
+    faUsers,
+} from "@fortawesome/free-solid-svg-icons";
 
-
-
-function Closing(){
-    return(
+function Closing() {
+    return (
         <div id="closing">
-            <div className="piathon-winner-top">
-                Pi-a-thon 2021 Winners
-            </div>
+            <div className="piathon-winner-top">Pi-a-thon 2021 Winners</div>
             <div>
-                <img src="/piathon/2021winner.svg" id="piathon-winner-image"></img>
+                <img
+                    src="/piathon/2021winner.svg"
+                    id="piathon-winner-image"></img>
             </div>
             <div className="piathon-winner-top">
                 In Pi-a-thon 2021, we had...
@@ -26,22 +29,16 @@ function Closing(){
                             Registrations
                         </span>
                         <br></br>
-                        <span className="piathon-column-data">
-                            102
-                        </span>
+                        <span className="piathon-column-data">102</span>
                     </div>
                     <div className="column is-quarter">
                         <span className="icon">
                             <FontAwesomeIcon icon={faUsers}></FontAwesomeIcon>
                         </span>
                         <br></br>
-                        <span className="piathon-column-header">
-                            Teams
-                        </span>
+                        <span className="piathon-column-header">Teams</span>
                         <br></br>
-                        <span className="piathon-column-data">
-                            36
-                        </span>
+                        <span className="piathon-column-data">36</span>
                     </div>
                     <div className="column is-quarter">
                         <span className="icon">
@@ -52,9 +49,7 @@ function Closing(){
                             Tasks Completed
                         </span>
                         <br></br>
-                        <span className="piathon-column-data">
-                            546
-                        </span>
+                        <span className="piathon-column-data">546</span>
                     </div>
                     <div className="column is-quarter">
                         <span className="icon">
@@ -65,15 +60,13 @@ function Closing(){
                             Prizes Awarded
                         </span>
                         <br></br>
-                        <span className="piathon-column-data">
-                            $830.00
-                        </span>
+                        <span className="piathon-column-data">$830.00</span>
                     </div>
                 </div>
             </div>
             <hr className="piathon-wrapper-2-hr"></hr>
         </div>
-    )
+    );
 }
 
 export default Closing;

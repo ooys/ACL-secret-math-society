@@ -1,37 +1,55 @@
-import Navbar from '../components/navbar'
-import Footer from '../components/footer'
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faDiscord, faGoogle } from '@fortawesome/free-brands-svg-icons'
-import './_app'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignInAlt, faMicroscope, faHandsHelping, faUsers } from '@fortawesome/free-solid-svg-icons'
-library.add(fab, faDiscord, faSignInAlt, faGoogle, faMicroscope, faHandsHelping, faUsers)
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab, faDiscord, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import "./_app";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faSignInAlt,
+    faMicroscope,
+    faHandsHelping,
+    faUsers,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(
+    fab,
+    faDiscord,
+    faSignInAlt,
+    faGoogle,
+    faMicroscope,
+    faHandsHelping,
+    faUsers
+);
 
 /* To do: Add Lazyload */
 
-function Index(){
-    return(
+function Index() {
+    return (
         <div>
-            <title>
-                Secret Math Society - Home
-            </title>
-            <Navbar logo="/logo/logo_simple_gear.png" title="Secret Math Society" className="navbar is-dark" />
-            <div className = "wrapper" id="wrapper-top">
+            <title>Secret Math Society - Home</title>
+            <Navbar
+                logo="/logo/logo_simple_gear.png"
+                title="Secret Math Society"
+                className="navbar is-dark"
+            />
+            <div className="wrapper" id="wrapper-top">
                 <div className="container is-widescreen" id="container-1-top">
                     <div className="columns is-mobile" id="column-1-top">
-                        <img id="logo-index" src="/logo/logo_complete.png"></img>
-                        <div className="column is-hidden-mobile half" id="column-1-motto">
+                        <img
+                            id="logo-index"
+                            src="/logo/logo_complete.png"></img>
+                        <div
+                            className="column is-hidden-mobile half"
+                            id="column-1-motto">
                             <Link
                                 activeClass="active"
                                 to="column-3-box-explore"
                                 spy={true}
                                 smooth={true}
                                 offset={-130}
-                                duration={1000}
-                                >
+                                duration={1000}>
                                 <div className="motto-text" id="motto-explore">
-                                        Explore.
+                                    Explore.
                                 </div>
                             </Link>
                             <Link
@@ -40,8 +58,7 @@ function Index(){
                                 spy={true}
                                 smooth={true}
                                 offset={-130}
-                                duration={1000}
-                                >
+                                duration={1000}>
                                 <div className="motto-text" id="motto-connect">
                                     Connect.
                                 </div>
@@ -52,31 +69,40 @@ function Index(){
                                 spy={true}
                                 smooth={true}
                                 offset={-130}
-                                duration={1000}
-                                >
+                                duration={1000}>
                                 <div className="motto-text" id="motto-impact">
                                     Impact.
                                 </div>
                             </Link>
                         </div>
-                        <div id="main-title">
-                            Secret Math Society
-                        </div>
+                        <div id="main-title">Secret Math Society</div>
                         <div id="main-subtitle">
                             An Academies of Loudoun Student-run Organization
                         </div>
                     </div>
                     <div className="columns is-mobile" id="column-1-bot">
-                        <div className="buttons is-centered" id="column-1-bot-buttons">
-                            <a className="button is-medium is-dark is-rounded has-shadow" target="_blank" rel="noopener noreferrer" href="https://bit.ly/ACLSMSDiscord">
+                        <div
+                            className="buttons is-centered"
+                            id="column-1-bot-buttons">
+                            <a
+                                className="button is-medium is-dark is-rounded has-shadow"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://bit.ly/ACLSMSDiscord">
                                 <span className="icon">
-                                    <FontAwesomeIcon icon={fab.faDiscord}></FontAwesomeIcon>
+                                    <FontAwesomeIcon
+                                        icon={fab.faDiscord}></FontAwesomeIcon>
                                 </span>
                                 <span>Join our Server</span>
                             </a>
-                            <a className="button is-medium is-dark is-rounded has-shadow" target="_blank" rel="noopener noreferrer" href="https://bit.ly/ACLSMSApp">
+                            <a
+                                className="button is-medium is-dark is-rounded has-shadow"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://bit.ly/ACLSMSApp">
                                 <span className="icon">
-                                    <FontAwesomeIcon icon={faSignInAlt}></FontAwesomeIcon>
+                                    <FontAwesomeIcon
+                                        icon={faSignInAlt}></FontAwesomeIcon>
                                 </span>
                                 <span>Become a Member</span>
                             </a>
@@ -86,85 +112,91 @@ function Index(){
             </div>
 
             {/* Container 2 - Quote */}
-            <div className = "wrapper" id="wrapper-2">
+            <div className="wrapper" id="wrapper-2">
                 <div className="container is-widescreen">
                     <div className="columns is-mobile" id="column-2-top">
-                        <h1 className="column is-centered" id="column-2-top-text">
-                            "Sharing our passion in mathematics, one equation at a time."
+                        <h1
+                            className="column is-centered"
+                            id="column-2-top-text">
+                            "Sharing our passion in mathematics, one equation at
+                            a time."
                         </h1>
                     </div>
                 </div>
             </div>
 
-
             {/* Container 3 - Our Mission */}
-            <div className = "wrapper" id="wrapper-3">
+            <div className="wrapper" id="wrapper-3">
                 <div className="container is-widescreen">
                     <div className="columns is-mobile" id="column-3-top">
-                        <h1 className="section-title is-centered" id="column-3-top-text">
+                        <h1
+                            className="section-title is-centered"
+                            id="column-3-top-text">
                             Our Mission
                         </h1>
                     </div>
-                    <div className="columns is-centered is-mobile" id="column-3">
+                    <div
+                        className="columns is-centered is-mobile"
+                        id="column-3">
                         <div className="column" id="column-3-explore">
-                            <div className="box has-shadow" id="column-3-box-explore">
+                            <div
+                                className="box has-shadow"
+                                id="column-3-box-explore">
                                 <div className="title">
-                                    <FontAwesomeIcon className="column-3-box-icon fa-sm" icon={faMicroscope}></FontAwesomeIcon>
+                                    <FontAwesomeIcon
+                                        className="column-3-box-icon fa-sm"
+                                        icon={faMicroscope}></FontAwesomeIcon>
                                     Explore
                                 </div>
-                                <div className="content" id="column-3-impact-content">
-                                    <ul >
-                                        <li>
-                                            Competition Math
-                                        </li>
-                                        <li>
-                                            Hands-on Experiments
-                                        </li>
-                                        <li>
-                                            Team Challenges
-                                        </li>
+                                <div
+                                    className="content"
+                                    id="column-3-impact-content">
+                                    <ul>
+                                        <li>Competition Math</li>
+                                        <li>Hands-on Experiments</li>
+                                        <li>Team Challenges</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="column" id="column-2-connect">
-                            <div className="box has-shadow" id="column-3-box-connect">
+                            <div
+                                className="box has-shadow"
+                                id="column-3-box-connect">
                                 <div className="title">
-                                    <FontAwesomeIcon className="column-3-box-icon fa-sm" icon={faUsers}></FontAwesomeIcon>
+                                    <FontAwesomeIcon
+                                        className="column-3-box-icon fa-sm"
+                                        icon={faUsers}></FontAwesomeIcon>
                                     Connect
                                 </div>
-                                <div className="content" id="column-3-impact-content">
-                                    <ul >
-                                        <li>
-                                            Engagement
-                                        </li>
-                                        <li>
-                                            Diversity
-                                        </li>
-                                        <li>
-                                            Volunteering Opportunities
-                                        </li>
+                                <div
+                                    className="content"
+                                    id="column-3-impact-content">
+                                    <ul>
+                                        <li>Engagement</li>
+                                        <li>Diversity</li>
+                                        <li>Volunteering Opportunities</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="column" id="column-3-impact">
-                            <div className="box has-shadow" id="column-3-box-impact">
+                            <div
+                                className="box has-shadow"
+                                id="column-3-box-impact">
                                 <div className="title">
-                                    <FontAwesomeIcon className="column-3-box-icon fa-sm" icon={faHandsHelping}></FontAwesomeIcon>
+                                    <FontAwesomeIcon
+                                        className="column-3-box-icon fa-sm"
+                                        icon={faHandsHelping}></FontAwesomeIcon>
                                     Impact
                                 </div>
-                                <div className="content" id="column-3-impact-content">
-                                    <ul >
-                                        <li>
-                                            2021 ACL Pi Day Celebration
-                                        </li>
-                                        <li>
-                                            ACL RESET Club Collaboration
-                                        </li>
-                                        <li>
-                                            ... and more!
-                                        </li>
+                                <div
+                                    className="content"
+                                    id="column-3-impact-content">
+                                    <ul>
+                                        <li>2021 ACL Pi Day Celebration</li>
+                                        <li>ACL RESET Club Collaboration</li>
+                                        <li>... and more!</li>
                                     </ul>
                                 </div>
                             </div>
@@ -173,28 +205,37 @@ function Index(){
                 </div>
             </div>
 
-
             {/* Container 4 - Meetings */}
             <div id="wrapper-4">
                 <div className="container is-widescreen">
                     <div className="columns is-mobile" id="column-4-top">
-                        <h1 className="section-title is-centered" id="column-4-top-text">
+                        <h1
+                            className="section-title is-centered"
+                            id="column-4-top-text">
                             Meetings
                         </h1>
                     </div>
                     <div className="columns" id="column-4">
                         <div className="column is-half" id="column-4-left">
                             <div id="column-4-left-text">
-                                Google Meet<br></br> Every other Tuesday, 4-5PM EST
+                                Google Meet<br></br> Every other Tuesday, 4-5PM
+                                EST
                             </div>
-                            <a className="button is-medium is-success is-rounded has-shadow" target="_blank" rel="noopener noreferrer" href="https://g.co/meet/aclsecretmathsociety">
+                            <a
+                                className="button is-medium is-success is-rounded has-shadow"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://g.co/meet/aclsecretmathsociety">
                                 <span className="icon">
-                                    <FontAwesomeIcon icon={fab.faGoogle}></FontAwesomeIcon>
+                                    <FontAwesomeIcon
+                                        icon={fab.faGoogle}></FontAwesomeIcon>
                                 </span>
                                 <span>Join Google Meet</span>
                             </a>
                         </div>
-                        <div className="column is-hidden-mobile" id="column-4-right">
+                        <div
+                            className="column is-hidden-mobile"
+                            id="column-4-right">
                             <div id="column-4-right-text">
                                 Upcoming Meeting Dates
                             </div>
@@ -223,7 +264,7 @@ function Index(){
             {/* Bottom Contact Bar */}
             <Footer />
         </div>
-    )
+    );
 }
 
 export default Index;
