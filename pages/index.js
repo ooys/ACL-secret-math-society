@@ -1,5 +1,5 @@
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faDiscord, faGoogle } from "@fortawesome/free-brands-svg-icons";
@@ -34,7 +34,7 @@ function Index() {
             />
             <div className="wrapper" id="wrapper-top">
                 <div className="container is-widescreen" id="container-1-top">
-                    <div className="columns is-mobile" id="column-1-top">
+                    <div className="columns" id="column-1-top">
                         <img
                             id="logo-index"
                             src="/logo/logo_complete.png"></img>

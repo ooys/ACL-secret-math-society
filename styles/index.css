@@ -615,3 +615,105 @@
 #piathon-winner-columns .piathon-column-header {
     font-size: 25px;
 }
+
+/* About Us */
+
+#about-wrapper-1 {
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-left: 15%;
+    margin-right: 15%;
+    overflow: visible;
+    margin-bottom: 50px;
+}
+
+#about-container-1-title {
+    height: auto;
+}
+
+.about-title {
+    height: 100px;
+    line-height: 80px;
+    text-align: center;
+    font-family: "Oxygen", sans-serif;
+    font-size: 20px;
+    font-weight: initial;
+}
+
+#about-container-1-body {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-wrapper-2 {
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-left: 15%;
+    margin-right: 15%;
+    overflow: visible;
+    margin-bottom: 50px;
+}
+
+#about-container-2-title {
+    height: auto;
+}
+
+#about-container-2-body {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.is-profile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2rem;
+    transition: all 0.5s;
+}
+
+.is-profile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2),
+        0 24px 80px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s;
+}
+
+.is-profile .is-profile-picture {
+    width: 100%;
+    overflow: hidden;
+}
+
+.is-profile p {
+    font-family: "Oxygen", sans-serif;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.is-profile .is-profile-text {
+    width: stretch;
+    margin: 5%;
+    margin-top: 2%;
+    display: inline-block;
+}
+
+.is-profile .is-profile-name {
+    font-size: 25px;
+    color: black;
+}
+
+.is-profile .is-profile-origin {
+    font-size: 15px;
+}
+
+.is-profile .is-profile-position {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.is-profile .is-profile-contact {
+    margin: 0 30%;
+    text-align: center;
+}
+
+.is-profile .is-profile-contact a {
+    color: black;
+}
