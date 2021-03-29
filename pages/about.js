@@ -59,7 +59,7 @@ function About() {
                             origin="Rock Ridge High School '22"
                             email="793219@lcps.org"
                             discord="sahahaha#5502"
-                            // picture="/profile/a_patel.png"
+                            picture="/profile/i_saha.png"
                         />
                     </div>
                 </div>
