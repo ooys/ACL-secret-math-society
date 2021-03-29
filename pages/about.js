@@ -19,7 +19,7 @@ function About() {
                 <div
                     className="container is-widescreen"
                     id="about-container-1-body">
-                    <div className="columns is-desktop is-multiline is-variable is-4 is-centered">
+                    <div className="columns is-multiline is-variable is-4 is-centered">
                         <Profile
                             name="Yihong Song"
                             position="Head of Operations, Webmaster"
@@ -74,7 +74,7 @@ function About() {
                 <div
                     className="container is-widescreen"
                     id="about-container-2-body">
-                    <div className="columns is-desktop is-multiline is-variable is-4 is-centered">
+                    <div className="columns is-multiline is-variable is-4 is-centered">
                         <Profile
                             name="Alex Rios"
                             origin="Freedom High School '24"

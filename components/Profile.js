@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import LazyLoad from "react-lazyload";
 
 function Email({ rawemail }) {
     if (rawemail != null) {
@@ -77,19 +78,23 @@ function Github({ rawgithub }) {
 
 function Profile({ name, position, origin, picture, email, discord, github }) {
     return (
-        <div className="column is-one-third">
+        <div className="column is-one-third-widescreen is-one-third-desktop is-half-tablet">
             <div className="is-profile">
-                <img
-                    className="is-profile-picture"
-                    src={picture}
-                    alt={name}></img>
+                <LazyLoad once="true">
+                    <img
+                        className="is-profile-picture"
+                        src={picture}
+                        alt={name}
+                    />
+                </LazyLoad>
+
                 <div className="is-profile-text">
                     <p className="is-profile-name">{name}</p>
                     <p className="is-profile-origin">{origin}</p>
                     <p className="is-profile-position">{position}</p>
                 </div>
                 <div className="is-profile-contact">
-                    <div className="columns is-profile-contact-columns is-centered">
+                    <div className="columns is-profile-contact-columns is-centered is-mobile">
                         <Email rawemail={email} />
                         <Discord rawdiscord={discord} />
                         <Github rawgithub={github} />
