@@ -55,8 +55,8 @@ function Navbar({ logo, title, className, id }) {
                         </a>
 
                         <a
-                            className="navbar-item is-hoverable" /* onClick={() => router.push('/about')}*/
-                        >
+                            className="navbar-item is-hoverable"
+                            onClick={() => router.push("/about")}>
                             About Us
                         </a>
 

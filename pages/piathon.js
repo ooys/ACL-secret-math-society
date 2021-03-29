@@ -1,8 +1,8 @@
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import Clock from "../components/clock";
-import Closing from "../components/closing";
-import Leaderboard from "../components/leaderboard";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Clock from "../components/Clock";
+import Closing from "../components/Closing";
+import Leaderboard from "../components/Leaderboard";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
