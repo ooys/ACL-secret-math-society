@@ -10,6 +10,7 @@ function About() {
                 title="About Us"
                 className="navbar is-transparent"
             />
+            {/* Mathematics shouldn't be a secret. */}
             <div className="wrapper" id="about-wrapper-1">
                 <div
                     className="container is-widescreen"
