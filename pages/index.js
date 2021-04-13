@@ -26,18 +26,12 @@ library.add(
 function Index() {
     return (
         <div>
-            <title>Secret Math Society - Home</title>
-            <Navbar
-                logo="/logo/logo_simple_gear.png"
-                title="Secret Math Society"
-                className="navbar is-dark"
-            />
+            <title>ACL Secret Math Society - Home</title>
+            <Navbar title="ACL Secret Math Society" className="navbar" />
             <div className="wrapper" id="wrapper-top">
                 <div className="container is-widescreen" id="container-1-top">
                     <div className="columns" id="column-1-top">
-                        <img
-                            id="logo-index"
-                            src="/logo/logo_complete.png"></img>
+                        <img id="logo-index" src="/logo/Logo_ACL.png"></img>
                         <div
                             className="column is-hidden-mobile half"
                             id="column-1-motto">

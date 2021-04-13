@@ -21,7 +21,6 @@ function About() {
         <div>
             <title>ACL Pi-a-thon 2021 - Secret Math Society</title>
             <Navbar
-                logo="/logo/logo_simple_exclamation.png"
                 title="ACL Pi-a-thon 2021"
                 className="navbar is-transparent is-fixed-top"
                 id="piathon-navbar"
