@@ -24,7 +24,7 @@ function Footer() {
                                 <img
                                     className="image"
                                     id="logo"
-                                    src="/logo/logo_complete.png"
+                                    src="/logo/Logo_ACL.png"
                                 />
                             </Link>
                             <div id="column-footer-left-text">
@@ -94,8 +94,10 @@ function Footer() {
                             className="column is-hidden-mobile"
                             id="column-footer-right">
                             <p id="column-footer-right-text">
-                                <b>Secret Math Society</b> is a non-profit
-                                organization operated in its entirety by
+                                ACL Secret Math Society is the Academies of
+                                Loudoun chapter of <b>Secret Math Society</b>, a
+                                501(c)(3) non-profit organization. ACL Secret
+                                Math Society is operated in its entirety by
                                 students and sponsored by Academies of Loudoun
                                 faculty and PTSA.
                             </p>

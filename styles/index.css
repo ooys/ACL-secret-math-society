@@ -81,7 +81,7 @@
 .footer {
     margin-top: 20px;
     background-color: #363636;
-    height: 320px;
+    height: 350px;
 }
 .footer #column-footer {
     margin-left: 5%;
@@ -94,9 +94,10 @@
     font-size: 25px;
 }
 .footer #logo {
-    height: 128px;
-    width: 128px;
+    height: 160px;
+    width: 160px;
     margin-bottom: 5%;
+    margin-left: -4%;
 }
 .footer #column-footer-left-buttons {
     margin-top: 5%;
@@ -127,7 +128,7 @@
     width: 100px;
     float: right;
     margin-top: 5%;
-    margin-right: 50px;
+    margin-right: 40%;
 }
 .footer #column-footer-right-logo {
     height: 100px;

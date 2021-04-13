@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-function Navbar({ logo, title, className, id }) {
+function Navbar({ title, className, id }) {
     const router = useRouter();
     return (
         <div>
@@ -15,7 +15,11 @@ function Navbar({ logo, title, className, id }) {
                         className="navbar-item"
                         id="navbarlogo"
                         onClick={() => router.push("/")}>
-                        <img className="image" id="logo" src={logo} />
+                        <img
+                            className="image"
+                            id="logo"
+                            src={"/logo/Logo_ACL.svg"}
+                        />
                     </a>
                     <div id="navbar-description">{title}</div>
 
@@ -64,6 +68,12 @@ function Navbar({ logo, title, className, id }) {
                             className="navbar-item is-hoverable"
                             onClick={() => router.push("/piathon")}>
                             Pi-a-thon 2021
+                        </a>
+                        <a
+                            className="navbar-item is-hoverable"
+                            // onClick={() => router.push("/dev")}
+                        >
+                            Log In
                         </a>
                     </div>
                 </div>

@@ -5,11 +5,8 @@ import Profile from "../components/Profile";
 function About() {
     return (
         <div>
-            <Navbar
-                logo="/logo/logo_simple_question.png"
-                title="About Us"
-                className="navbar is-transparent"
-            />
+            <Navbar title="About Us" className="navbar is-transparent" />
+            {/* Mathematics shouldn't be a secret. */}
             <div className="wrapper" id="about-wrapper-1">
                 <div
                     className="container is-widescreen"
