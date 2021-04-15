@@ -71,9 +71,10 @@ function Navbar({ title, className, id }) {
                         </a>
                         <a
                             className="navbar-item is-hoverable"
-                            // onClick={() => router.push("/dev")}
-                        >
-                            Log In
+                            onClick={() =>
+                                router.push("https://smsbeacon.vercel.app")
+                            }>
+                            Beacon
                         </a>
                     </div>
                 </div>
