@@ -56,10 +56,10 @@ function About() {
                             <p
                                 className="card-header-title"
                                 id="piathon-card-rules-title">
-                                Event Info
+                                Event Info: Under Construction
                             </p>
                         </header>
-                        <div className="card-content">
+                        {/* <div className="card-content">
                             <p className="title is-4">
                                 Date
                                 <br></br>
@@ -170,91 +170,10 @@ function About() {
                                     <span>Register Your Team</span>
                                 </a>
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                     <br></br>
 
-                    <div className="card" id="piathon-card-rules">
-                        <header className="card-header">
-                            <p
-                                className="card-header-title"
-                                id="piathon-card-rules-title">
-                                Competition Rules
-                            </p>
-                        </header>
-                        <div className="card-content">
-                            <p className="title is-4">Tasks</p>
-                            <p className="subtitle is-5">
-                                5 Pi-related tasks are released <b>each day</b>{" "}
-                                on 12:00 AM ETC for the 4 days of the event.
-                                <br></br>
-                                (A total of 20 tasks numbered from 1 - 20)
-                                <br></br>
-                                <br></br>
-                                Tasks will remain open for the duration of the
-                                event.
-                                <br></br>
-                                No new task will be posted for Day 5, the final
-                                day to submit all tasks.
-                                <br></br>
-                                Submissions will close at 11:59 PM EST on Day 5.
-                                (3/13)
-                                <br></br>
-                                <br></br>
-                                After completion of each task, submit{" "}
-                                <b>team name</b>, <b>task number</b>, and the{" "}
-                                <b>corresponding answer</b> to the answer form
-                                below!
-                                <br></br>
-                                <br></br>
-                                Only 1 submission per team per task is
-                                necessary.
-                                <br></br>
-                                Only the first valid submission will count
-                                towards a team's final score.
-                            </p>
-                            <a
-                                className="button is-medium is-rounded has-shadow"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                /*href="http://bit.ly/piathon-answer"*/ id="piathon-button-submission">
-                                <span className="icon">
-                                    <FontAwesomeIcon
-                                        icon={
-                                            faArrowAltCircleRight
-                                        }></FontAwesomeIcon>
-                                </span>
-                                <span>Task Answer Submissions</span>
-                            </a>
-                            <p className="subtitle is-6">
-                                <br></br>
-                                *Form no longer accepting submissions.
-                            </p>
-                            <br></br>
-                            <p className="title is-4">Scoring</p>
-                            <p className="subtitle is-5">
-                                Every valid submission is given 2 Points.
-                                <br></br>
-                                Each correct answer is given 8 <b>extra</b>{" "}
-                                Points.
-                                <br></br>
-                                Only the first valid submission will count
-                                towards a team's final score.
-                            </p>
-                            <br></br>
-                            <p className="title is-4">Leaderboard</p>
-                            <p className="subtitle is-5">
-                                Leaderboard is updated daily at 12:00 AM EST.
-                            </p>
-                            <br></br>
-                            <p className="title is-4">Tiebreakers</p>
-                            <p className="subtitle is-5">
-                                In the event of a tie in total scores, the team
-                                with the faster cumulative submission time has
-                                the advantage.
-                            </p>
-                        </div>
-                    </div>
                     <br></br>
 
                     <div className="card" id="piathon-card-rules">
@@ -275,19 +194,6 @@ function About() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     href="mailto:1036566@lcps.org">
-                                    <span className="icon">
-                                        <FontAwesomeIcon
-                                            icon={faEnvelope}></FontAwesomeIcon>
-                                    </span>
-                                </a>
-                                <br></br>
-                                <br></br>
-                                Tarun Ravi - VP Events, ACL PTSA &nbsp;
-                                <a
-                                    className="piathon-icon-anchor"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    href="mailto:vpevents@aclptsa.org">
                                     <span className="icon">
                                         <FontAwesomeIcon
                                             icon={faEnvelope}></FontAwesomeIcon>
