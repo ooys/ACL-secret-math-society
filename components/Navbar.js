@@ -31,9 +31,8 @@ function Navbar({ title, className, id }) {
                         data-target="navbaritems"
                         id="navbar-toggle"
                         onClick={() => {
-                            let toggle = document.querySelector(
-                                "#navbar-toggle"
-                            );
+                            let toggle =
+                                document.querySelector("#navbar-toggle");
                             let menu = document.querySelector("#navbaritems");
                             toggle.classList.toggle("is-active");
                             menu.classList.toggle("is-active");
@@ -67,7 +66,7 @@ function Navbar({ title, className, id }) {
                         <a
                             className="navbar-item is-hoverable"
                             onClick={() => router.push("/piathon")}>
-                            Pi-a-thon 2021
+                            Pi-a-thon 2022
                         </a>
                         <a
                             className="navbar-item is-hoverable"

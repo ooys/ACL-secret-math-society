@@ -19,9 +19,9 @@ import dynamic from "next/dynamic";
 function About() {
     return (
         <div>
-            <title>ACL Pi-a-thon 2022 - Secret Math Society</title>
+            <title>ACL Pi-a-thon 2021 - Secret Math Society</title>
             <Navbar
-                title="ACL Pi-a-thon 2022"
+                title="ACL Pi-a-thon 2021"
                 className="navbar is-transparent is-fixed-top"
                 id="piathon-navbar"
             />
@@ -41,15 +41,17 @@ function About() {
                     <div
                         className="columns is-mobile"
                         id="piathon-column-2-top">
-                        Pi-a-thon 2022
+                        Pi-a-thon 2021
                     </div>
                     <div id="piathon-column-2-subtop">
-                        An Academies of Loudoun competition celebrating 2022 Pi
+                        An Academies of Loudoun competition celebrating 2021 Pi
                         Day.
                     </div>
                     <hr className="piathon-wrapper-2-hr"></hr>
 
-                    {/* <Clock /> */}
+                    <Closing />
+                    <Leaderboard />
+                    <Clock />
 
                     <div className="card" id="piathon-card-info">
                         <header className="card-header">
@@ -63,7 +65,7 @@ function About() {
                             <p className="title is-4">
                                 Date
                                 <br></br>
-                                March 9, 2022 ~ March 14, 2022
+                                March 9, 2021 ~ March 14, 2021
                             </p>
                             <br></br>
                             <p className="title is-4">Prizes</p>
@@ -348,7 +350,7 @@ function About() {
                                 <br></br>
                                 <b>
                                     And to everyone who participated in
-                                    Pi-a-thon 2022!
+                                    Pi-a-thon 2021!
                                 </b>
                             </p>
                         </div>
