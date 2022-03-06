@@ -48,22 +48,20 @@ function About() {
                         Day.
                     </div>
                     <hr className="piathon-wrapper-2-hr"></hr>
-
                     {/* <Clock /> */}
-
                     <div className="card" id="piathon-card-info">
                         <header className="card-header">
                             <p
                                 className="card-header-title"
                                 id="piathon-card-rules-title">
-                                Event Info: Under Construction
+                                Event Info
                             </p>
                         </header>
-                        {/* <div className="card-content">
+                        <div className="card-content">
                             <p className="title is-4">
                                 Date
                                 <br></br>
-                                March 9, 2022 ~ March 14, 2022
+                                March 8, 2022 ~ March 15, 2022
                             </p>
                             <br></br>
                             <p className="title is-4">Prizes</p>
@@ -89,36 +87,34 @@ function About() {
                                 <thead>
                                     <tr>
                                         <th>Date</th>
-                                        <th>Task Topic</th>
-                                        <th>Task Numbers</th>
+                                        <th>Event</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Day 1, Tuesday 3/9</td>
-                                        <td>Pi-uzzles (Puzzles)</td>
-                                        <td>1 - 5</td>
+                                        <td>Tuesday 3/8 </td>
+                                        <td>Round 1: Virtual Tasks Released</td>
                                     </tr>
                                     <tr>
-                                        <td>Day 2, Wednesday 3/10</td>
-                                        <td>Tri-pi-a (Trivia)</td>
-                                        <td>6 - 10</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Day 3, Thursday 3/11</td>
-                                        <td>Pi-ddles (Riddles)</td>
-                                        <td>11 - 15</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Day 4, Friday 3/12</td>
-                                        <td>Pi-th (Math)</td>
-                                        <td>16 - 20</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Day 5, Saturday 3/13</td>
-                                        <td>No new tasks</td>
+                                        <td>Friday 3/11, 11:59 PM</td>
                                         <td>
-                                            Final submission date for all tasks!
+                                            Round 1: Virtual Answer Submission
+                                            Closed
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Monday 3/14, Lunch</td>
+                                        <td>
+                                            Round 2: A Day In-Person Time
+                                            Challenge
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tuesday 3/15, Lunch</td>
+                                        <td>
+                                            Round 2: B Day In-Person Time
+                                            Challenge
                                         </td>
                                     </tr>
                                 </tbody>
@@ -140,9 +136,9 @@ function About() {
                             <br></br>
                             <p className="title is-4">Registration</p>
                             <p className="subtitle is-5">
-                                Registration closes at the end of the event.
-                                (3/14)
-                                <br></br>1 to 5 member(s) are allowed per team.
+                                Registration closes at the end of round 1.
+                                (3/11)
+                                <br></br>1 to 4 member(s) are allowed per team.
                                 <br></br>
                                 Teams must be solely composed of current
                                 Academies of Loudoun students. We heavily
@@ -159,7 +155,7 @@ function About() {
                                     className="button is-medium is-rounded has-shadow"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    href="http://bit.ly/piathon-register"
+                                    href="https://forms.gle/xU7QUAjyuCYbX84q8"
                                     id="piathon-button-register">
                                     <span className="icon">
                                         <FontAwesomeIcon
@@ -170,12 +166,92 @@ function About() {
                                     <span>Register Your Team</span>
                                 </a>
                             </p>
-                        </div> */}
+                        </div>
                     </div>
                     <br></br>
+                    <div className="card" id="piathon-card-rules">
+                        <header className="card-header">
+                            <p
+                                className="card-header-title"
+                                id="piathon-card-rules-title">
+                                Competition Rules
+                            </p>
+                        </header>
+                        <div className="card-content">
+                            <p className="title is-4">Round 1 (Virtual)</p>
+                            <p className="subtitle is-5">
+                                Pi-related tasks will be emailed to each
+                                individual on each team before March 8th.{" "}
+                                <br></br>
+                                <br></br>
+                                <span id="is-red">
+                                    Submissions will close at 11:59 PM EST on
+                                    3/11
+                                </span>
+                                <br></br>
+                                <br></br>
+                                After completion of each task, submit your{" "}
+                                <b>team name</b> and the <b>task answers</b> to
+                                the answer form below!
+                                <br></br>
+                                <br></br>
+                                Only 1 submission per team is necessary.
+                                <br></br>
+                                Only the first valid submission will count
+                                towards a team's final score.
+                            </p>
+                            <a
+                                className="button is-medium is-rounded has-shadow"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://forms.gle/T9WvDQ3wtnHQQFxW8"
+                                id="piathon-button-submission">
+                                <span className="icon">
+                                    <FontAwesomeIcon
+                                        icon={
+                                            faArrowAltCircleRight
+                                        }></FontAwesomeIcon>
+                                </span>
+                                <span>Task Answer Submissions</span>
+                            </a>
+                            <p className="subtitle is-6">
+                                <br></br>
+                                {/* *Form no longer accepting submissions. */}
+                            </p>
+                            <br></br>
+                            <p className="title is-4">Scoring</p>
+                            <p className="subtitle is-5">
+                                There are 4 tasks in total. <br></br>Based on
+                                the number of correct answers, all teams who
+                                qualify for Round 2 will be contacted by email
+                                with further instructions by March 12th 11:59
+                                PM. <br></br>
+                            </p>
 
+                            {/* <p className="title is-4">Leaderboard</p>
+                            <p className="subtitle is-5">
+                                Leaderboard is updated daily at 12:00 AM EST.
+                            </p> */}
+                            {/* <br></br>
+                            <p className="title is-4">Tiebreakers</p>
+                            <p className="subtitle is-5">
+                                In the event of a tie in total scores, the team
+                                with the faster cumulative submission time has
+                                the advantage.
+                            </p> */}
+                        </div>
+                        <div className="card-content">
+                            <p className="title is-4">Round 2 (In-Person)</p>
+                            <p className="subtitle is-5">
+                                Qualifying teams compete head to head in an
+                                in-person challenge at Mr. T's room (Room 1314)
+                                during lunch. Winners will be declared at the
+                                end of the competition. More details will be
+                                explained in-person.
+                            </p>
+                        </div>
+                    </div>
                     <br></br>
-
                     <div className="card" id="piathon-card-rules">
                         <header className="card-header">
                             <p
@@ -232,7 +308,6 @@ function About() {
                         </div>
                     </div>
                     <br></br>
-
                     <div className="card" id="piathon-card-thanks">
                         <div className="card-content">
                             <div className="title is-4">Special thanks to:</div>

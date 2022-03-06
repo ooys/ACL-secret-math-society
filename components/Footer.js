@@ -85,7 +85,7 @@ function Footer() {
                             </div>
                             <div className="footer-element">
                                 <a onClick={() => router.push("/piathon")}>
-                                    Pi-a-thon 2021
+                                    Pi-a-thon 2022
                                 </a>
                             </div>
                         </div>
