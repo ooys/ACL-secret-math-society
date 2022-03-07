@@ -66,11 +66,7 @@ function About() {
                             <br></br>
                             <p className="title is-4">Prizes</p>
                             <p className="subtitle is-5">
-                                1st Place: $100 Giftcard
-                                <br></br>
-                                2nd Place: $50 Giftcard
-                                <br></br>
-                                3rd Place: $25 Giftcard
+                                1st Place Team: $50 Cash/Giftcard per person
                             </p>
                             <p className="subtitle is-6">
                                 *Only registered Academies of Loudoun teams are
